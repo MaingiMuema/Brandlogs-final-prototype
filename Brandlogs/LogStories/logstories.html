@@ -95,8 +95,8 @@
                 <h3 class="fw-bold ms-2 fs-6">Username</h3>
               </div>
             </a>
-            <a href="#">
-              <button class="btn font-weight-bold px-4 py-1" id="connect-btn" data-toggle="modal" data-target="#first-modal">
+            <a href="#" class="connect-btn" data-toggle="modal" data-target="#first-modal">
+              <button class="btn font-weight-bold px-4 py-1">
                 Connect
               </button>
             </a>
@@ -169,8 +169,8 @@
                   <h3 class="font-weight-bold ms-1 fw-bold fs-6" style="color: black;">Msoo Heavens</h3>
                 </div>
               </a>
-              <a href="#">
-                <button class="btn font-weight-bold px-4 py-1" id="connect-btn" data-toggle="modal" data-target="#first-modal">
+              <a href="#" class="connect-btn" data-toggle="modal" data-target="#first-modal">
+                <button class="btn font-weight-bold px-4 py-1">
                   Connect
                 </button>
               </a>
@@ -269,8 +269,8 @@
                   <h3 class="font-weight-bold ms-1 fw-bold fs-6" style="color: black;">Msoo Heavens</h3>
                 </div>
               </a>
-              <a href="#">
-                <button class="btn font-weight-bold px-4 py-1" id="connect-btn" data-toggle="modal" data-target="#first-modal">
+              <a href="#" class="connect-btn" data-toggle="modal" data-target="#first-modal">
+                <button class="btn font-weight-bold px-4 py-1">
                   Connect
                 </button>
               </a>
@@ -565,7 +565,160 @@
     </footer>
     <!-- End Footer -->
     <!-- Scripts-->
+    <!-- Scripts-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.4/js/utils.js"></script>
+
+    <!-- Navigate to Checkout -->
     <script>
+      function navigateCheckOut(){
+        window.location.href = "../Checkout/checkout.html"
+      }
+    </script>
+
+    <!-- Photo Upload -->
+    <script>
+       function previewFile() {
+          var preview = document.querySelector('img');
+          var file    = document.querySelector('input[type=file]').files[0];
+          var reader  = new FileReader();
+
+          reader.addEventListener("load", function () {
+            preview.src = reader.result;
+          }, false);
+
+          if (file) {
+            reader.readAsDataURL(file);
+          }
+        }
+        $(function() {
+          $('#profile-image1').on('click', function() {
+              $('#profile-image-upload').click();
+          });
+        });
+                
+    </script>
+
+    <!-- Phone number scripts -->
+    <script>
+      var input = document.querySelector("#phone");
+      var iti = window.intlTelInput(input, {
+        separateDialCode: true, // This will show a separate dial code input
+        utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.0/build/js/utils.js",
+        customPlaceholder: function(selectedCountryPlaceholder, selectedCountryData) {
+          // Customize the placeholder to include "+1" as the starting value
+          return "+1 " + selectedCountryPlaceholder;
+        },
+        initialCountry: "us", // Set the initial country to the United States
+        onlyCountries: ["us"], // Restrict to the United States
+      });
+
+      // Listen for input changes and validate the entered phone number
+      input.addEventListener("input", function() {
+        var isValidNumber = iti.isValidNumber();
+        if (isValidNumber) {
+          // The entered phone number is valid
+          input.setCustomValidity(""); // Clear any validation error message
+        } else {
+          // The entered phone number is not valid
+          input.setCustomValidity("Please enter a valid phone number starting with +1");
+        }
+      });
+
+      // Store the instance variable so we can access it in the console e.g. window.iti.getNumber()
+      window.iti = iti;
+
+    </script>
+
+    <!-- OTP Script -->
+    <script>
+      const inputs = document.querySelectorAll(".otp-field > input");
+      const button = document.querySelector(".btn");
+
+      window.addEventListener("load", () => inputs[0].focus());
+      button.setAttribute("disabled", "disabled");
+
+      inputs[0].addEventListener("paste", function (event) {
+        event.preventDefault();
+
+        const pastedValue = (event.clipboardData || window.clipboardData).getData(
+          "text"
+        );
+        const otpLength = inputs.length;
+
+        for (let i = 0; i < otpLength; i++) {
+          if (i < pastedValue.length) {
+            inputs[i].value = pastedValue[i];
+            inputs[i].removeAttribute("disabled");
+            inputs[i].focus;
+          } else {
+            inputs[i].value = ""; // Clear any remaining inputs
+            inputs[i].focus;
+          }
+        }
+      });
+
+      inputs.forEach((input, index1) => {
+        input.addEventListener("keyup", (e) => {
+          const currentInput = input;
+          const nextInput = input.nextElementSibling;
+          const prevInput = input.previousElementSibling;
+
+          if (currentInput.value.length > 1) {
+            currentInput.value = "";
+            return;
+          }
+
+          if (
+            nextInput &&
+            nextInput.hasAttribute("disabled") &&
+            currentInput.value !== ""
+          ) {
+            nextInput.removeAttribute("disabled");
+            nextInput.focus();
+          }
+
+          if (e.key === "Backspace") {
+            inputs.forEach((input, index2) => {
+              if (index1 <= index2 && prevInput) {
+                input.setAttribute("disabled", true);
+                input.value = "";
+                prevInput.focus();
+              }
+            });
+          }
+
+          button.classList.remove("active");
+          button.setAttribute("disabled", "disabled");
+
+          const inputsNo = inputs.length;
+          if (!inputs[inputsNo - 1].disabled && inputs[inputsNo - 1].value !== "") {
+            button.classList.add("active");
+            button.removeAttribute("disabled");
+
+            return;
+          }
+        });
+      });
+
+    </script>
+
+    <!-- Open a sequence of modals-->
+    <script>
+      $('.next-modal').on('click', function() {
+        var targetModal = $(this).data('target');
+        $(this).closest('.modal').modal('hide');
+        $(targetModal).modal('show');
+      });
+
+      $('.btn-toggle-fade').on('click', function() {
+        if ($('.modal').hasClass('fade')) {
+          $('.modal').removeClass('fade');
+          $(this).removeClass('btn-success');
+        } else {
+          $('.modal').addClass('fade');
+          $(this).addClass('btn-success');
+        }
+      });
     </script>
 </body>
 </html>

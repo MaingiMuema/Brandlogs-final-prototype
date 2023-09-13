@@ -317,7 +317,7 @@ body, html{
     }
   }
 
-  #connect-btn{
+  .connect-btn{
     border: 1px solid#1C9346;
     border-radius: 5px;
     outline: none;
@@ -331,7 +331,7 @@ body, html{
     z-index: 0;
   }
 
-  #connect-btn:hover{
+  .connect-btn:hover{
     background-color: #1C9346;
     border-radius: 5px;
   }
