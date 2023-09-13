@@ -62,11 +62,11 @@
                 <div class="d-flex">
                   <i
                     class="fas fa-user"
-                    style="margin: 10px; color: #1c9346"
+                    style="margin: 10px; color: #000"
                   ></i>
                   <h4
                     class="mobile-hide-text text"
-                    style="margin: 10px; color: #1c9346"
+                    style="margin: 10px; color: #000"
                   >
                     User Metrics
                   </h4>
@@ -97,14 +97,15 @@
             </li>
             <li class="mobile-icon">
               <a
-               href="../Admin/landingPage.html"
-               style="text-decoration: none"
+                data-target="#Statistik"
+                data-toggle="collapse"
+                aria-expanded="false"
               >
                 <div class="d-flex">
-                  <i class="fas fa-home" style="margin: 10px; color: #000"></i>
+                  <i class="fas fa-home" style="margin: 10px; color: #1c9346"></i>
                   <h4
                     class="mobile-hide-text text"
-                    style="margin: 10px; color: black"
+                    style="margin: 10px; color: #1c9346"
                   >
                     Landing Page
                   </h4>
@@ -116,121 +117,10 @@
         </nav>
       </div>
       <!-- Page Content Holder -->
-      <div id="content">
-        <div
-          class="w-100 p-5 d-flex flex-column flex-md-row justify-content-between mt-0"
-        >
-          <!-- Pie Chart -->
-          <div
-            style="
-              max-height: 300px;
-              border-radius: 2%;
-              box-shadow: 3px 3px 2px #ccc;
-            "
-            class="row col-md-4 d-flex"
-          >
-            <div class="col-12 border col-md-12">
-              <canvas id="genderPieChart"></canvas>
-            </div>
+      <div id="content"style="margin-top: 50px;">
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="../LandingPage/landingPage.html" style="width: 100%; height: 600px;" allowfullscreen></iframe>
           </div>
-
-          <!-- User Birthday Cards -->
-          <div class="col-12 col-md-6">
-            <div class="mt-4 mt-md-0">
-              <h3 class="fs-6"><strong>User Birthday Metrics</strong></h3>
-              <div class="card-columns d-flex flex-column gap-2">
-                <!-- Static cards for each month -->
-                <div style="background-color: #3984b26b" class="card">
-                  <div class="card-body">
-                    <h5 class="card-title d-flex justify-content-between">
-                      January <span class="text-danger">45</span>
-                    </h5>
-                  </div>
-                </div>
-                <div style="background-color: #3984b26b" class="card">
-                  <div class="card-body">
-                    <h5 class="card-title d-flex justify-content-between">
-                      February <span class="text-danger">45</span>
-                    </h5>
-                  </div>
-                </div>
-                <div style="background-color: #3984b26b" class="card">
-                  <div class="card-body">
-                    <h5 class="card-title d-flex justify-content-between">
-                      March <span class="text-danger">45</span>
-                    </h5>
-                  </div>
-                </div>
-                <div style="background-color: #3984b26b" class="card">
-                  <div class="card-body">
-                    <h5 class="card-title d-flex justify-content-between">
-                      April <span class="text-danger">45</span>
-                    </h5>
-                  </div>
-                </div>
-                <div style="background-color: #3984b26b" class="card">
-                  <div class="card-body">
-                    <h5 class="card-title d-flex justify-content-between">
-                      May <span class="text-danger">45</span>
-                    </h5>
-                  </div>
-                </div>
-                <div style="background-color: #3984b26b" class="card">
-                  <div class="card-body">
-                    <h5 class="card-title d-flex justify-content-between">
-                      June <span class="text-danger">45</span>
-                    </h5>
-                  </div>
-                </div>
-                <div style="background-color: #3984b26b" class="card">
-                  <div class="card-body">
-                    <h5 class="card-title d-flex justify-content-between">
-                      July <span class="text-danger">45</span>
-                    </h5>
-                  </div>
-                </div>
-                <div style="background-color: #3984b26b" class="card">
-                  <div class="card-body">
-                    <h5 class="card-title d-flex justify-content-between">
-                      August <span class="text-danger">45</span>
-                    </h5>
-                  </div>
-                </div>
-                <div style="background-color: #3984b26b" class="card">
-                  <div class="card-body">
-                    <h5 class="card-title d-flex justify-content-between">
-                      September <span class="text-danger">45</span>
-                    </h5>
-                  </div>
-                </div>
-
-                <div style="background-color: #3984b26b" class="card">
-                  <div class="card-body">
-                    <h5 class="card-title d-flex justify-content-between">
-                      October <span class="text-danger">45</span>
-                    </h5>
-                  </div>
-                </div>
-
-                <div style="background-color: #3984b26b" class="card">
-                  <div class="card-body">
-                    <h5 class="card-title d-flex justify-content-between">
-                      November <span class="text-danger">45</span>
-                    </h5>
-                  </div>
-                </div>
-
-                <div style="background-color: #3984b26b" class="card">
-                  <div class="card-body">
-                    <h5 class="card-title d-flex justify-content-between">
-                      December <span class="text-danger">45</span>
-                    </h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </main>
     <!-- Footer-->
