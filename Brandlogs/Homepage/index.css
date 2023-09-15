@@ -559,6 +559,11 @@ Connects
   width: 100%;
 }
 
+.modal-content{
+  height: 550px;
+  padding-top: 10%;
+}
+
 @media screen and (max-width: 520px){
   div #modal-content{
     width: 100vw;
@@ -620,3 +625,18 @@ Invitation flow Profile
   height: 100px;
 }   
 
+.gift-icon{
+  border-radius: 0px 0px 0px 10px;
+}
+
+@media screen and (max-width: 990px){
+  div .gift-icon{
+    border-radius: 0px 0px 10px 10px;
+  }
+  
+}
+
+.dob-input{
+  padding: 5px 20px;
+  margin: 5px 10px;
+}
