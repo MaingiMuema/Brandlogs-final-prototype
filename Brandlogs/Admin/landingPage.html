@@ -60,10 +60,7 @@
                 aria-expanded="false"
               >
                 <div class="d-flex">
-                  <i
-                    class="fas fa-user"
-                    style="margin: 10px; color: #000"
-                  ></i>
+                  <i class="fas fa-user" style="margin: 10px; color: #000"></i>
                   <h4
                     class="mobile-hide-text text"
                     style="margin: 10px; color: #000"
@@ -102,7 +99,10 @@
                 aria-expanded="false"
               >
                 <div class="d-flex">
-                  <i class="fas fa-home" style="margin: 10px; color: #1c9346"></i>
+                  <i
+                    class="fas fa-home"
+                    style="margin: 10px; color: #1c9346"
+                  ></i>
                   <h4
                     class="mobile-hide-text text"
                     style="margin: 10px; color: #1c9346"
@@ -117,10 +117,335 @@
         </nav>
       </div>
       <!-- Page Content Holder -->
-      <div id="content"style="margin-top: 50px;">
+      <div id="content" style="margin-top: 50px">
+        <div class="d-flex justify-content-end">
+          <button
+            class="btn btn-outnline-success mb-3"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#editForm"
+            aria-expanded="false"
+          >
+            <i class="fas fa-edit text-success"></i> Edit Page Content
+          </button>
+        </div>
+        <div class="collapse col-md-9 my-5" id="editForm">
+          <form>
+            <!-- Headline -->
+            <div class="mb-3">
+              <label for="headline" class="form-label">Edit Headline</label>
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="headline"
+                  name="headline"
+                  value="Existing Headline"
+                  readonly
+                />
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  onclick="editField('headline')"
+                >
+                  Edit
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-success"
+                  onclick="saveField('headline')"
+                  style="display: none"
+                >
+                  Save
+                </button>
+              </div>
+            </div>
+
+            <!-- Subheadline -->
+            <div class="mb-3">
+              <label for="subheadline" class="form-label"
+                >Edit Subheadline</label
+              >
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="subheadline"
+                  name="subheadline"
+                  value="Existing Subheadline"
+                  readonly
+                />
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  onclick="editField('subheadline')"
+                >
+                  Edit
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-success"
+                  onclick="saveField('subheadline')"
+                  style="display: none"
+                >
+                  Save
+                </button>
+              </div>
+            </div>
+
+            <!-- CTA (Call to Action) -->
+            <div class="mb-3">
+              <label for="cta" class="form-label">Edit CTA</label>
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="cta"
+                  name="cta"
+                  value="Existing CTA"
+                  readonly
+                />
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  onclick="editField('cta')"
+                >
+                  Edit
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-success"
+                  onclick="saveField('cta')"
+                  style="display: none"
+                >
+                  Save
+                </button>
+              </div>
+            </div>
+
+            <!-- How It Works -->
+            <div class="mb-3">
+              <label for="how-it-works" class="form-label"
+                >Edit How It Works</label
+              >
+              <div class="input-group">
+                <textarea
+                  class="form-control"
+                  id="how-it-works"
+                  name="how-it-works"
+                  rows="4"
+                  readonly
+                >
+Existing How It Works</textarea
+                >
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  onclick="editField('how-it-works')"
+                >
+                  Edit
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-success"
+                  onclick="saveField('how-it-works')"
+                  style="display: none"
+                >
+                  Save
+                </button>
+              </div>
+            </div>
+
+            <!-- Gallery -->
+            <div class="mb-3">
+              <label class="form-label">Edit Gallery</label>
+              <div id="existingImages">
+                <!-- Existing Images (Initially Hidden) -->
+                <div class="mb-2">
+                  <img
+                    src="./Assets/images/medium-shot-kid-holding-notebook 1.png"
+                    alt="Image 1"
+                    width="150"
+                  />
+                  <input
+                    type="text"
+                    class="form-control mt-2"
+                    name="existing_gallery_headers[]"
+                    value="Existing Header 1"
+                    readonly
+                  />
+                  <textarea
+                    class="form-control mt-2"
+                    name="existing_gallery_descriptions[]"
+                    rows="2"
+                    readonly
+                  >
+Existing Description 1</textarea
+                  >
+                  <button
+                    type="button"
+                    class="btn btn-secondary mt-2"
+                    onclick="editExistingImage(this)"
+                  >
+                    Edit
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-success mt-2"
+                    onclick="saveExistingImage(this)"
+                    style="display: none"
+                  >
+                    Save
+                  </button>
+                </div>
+                <div class="mb-2">
+                  <img
+                    src="./Assets/images/medium-shot-kid-holding-notebook 1.png"
+                    alt="Image 2"
+                    width="150"
+                  />
+                  <input
+                    type="text"
+                    class="form-control mt-2"
+                    name="existing_gallery_headers[]"
+                    value="Existing Header 2"
+                    readonly
+                  />
+                  <textarea
+                    class="form-control mt-2"
+                    name="existing_gallery_descriptions[]"
+                    rows="2"
+                    readonly
+                  >
+Existing Description 2</textarea
+                  >
+                  <button
+                    type="button"
+                    class="btn btn-secondary mt-2"
+                    onclick="editExistingImage(this)"
+                  >
+                    Edit
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-success mt-2"
+                    onclick="saveExistingImage(this)"
+                    style="display: none"
+                  >
+                    Save
+                  </button>
+                </div>
+              </div>
+              <hr />
+
+              <!-- Add New Images -->
+              <label class="form-label">Add New Images</label>
+              <div id="imageInputs">
+                <div class="mb-2">
+                  <input
+                    type="file"
+                    class="form-control-file"
+                    name="gallery_images[]"
+                    multiple
+                  />
+                  <input
+                    type="text"
+                    class="form-control mt-2"
+                    name="gallery_headers[]"
+                    placeholder="Image Header"
+                  />
+                  <textarea
+                    class="form-control mt-2"
+                    name="gallery_descriptions[]"
+                    placeholder="Image Description"
+                    rows="2"
+                  ></textarea>
+                </div>
+              </div>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                onclick="addImageInput()"
+              >
+                Add Image
+              </button>
+            </div>
+
+            <!-- Blogs -->
+            <div class="mb-3">
+              <label for="blogs" class="form-label">Blogs</label>
+              <div class="input-group">
+                <textarea
+                  class="form-control"
+                  id="blogs"
+                  name="blogs"
+                  rows="4"
+                  readonly
+                >
+Existing Blogs</textarea
+                >
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  onclick="editField('blogs')"
+                >
+                  Edit
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-success"
+                  onclick="saveField('blogs')"
+                  style="display: none"
+                >
+                  Save
+                </button>
+              </div>
+            </div>
+
+            <!-- FAQs -->
+            <div class="mb-3">
+              <label for="faqs" class="form-label">FAQs</label>
+              <div class="input-group">
+                <textarea
+                  class="form-control"
+                  id="faqs"
+                  name="faqs"
+                  rows="4"
+                  readonly
+                >
+Existing FAQs</textarea
+                >
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  onclick="editField('faqs')"
+                >
+                  Edit
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-success"
+                  onclick="saveField('faqs')"
+                  style="display: none"
+                >
+                  Save
+                </button>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-outline-success">
+              Update Page Content
+            </button>
+          </form>
+        </div>
         <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="../LandingPage/landingPage.html" style="width: 100%; height: 600px;" allowfullscreen></iframe>
-          </div>
+          <iframe
+            class="embed-responsive-item"
+            src="../LandingPage/landingPage.html"
+            style="width: 100%; height: 600px"
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
     </main>
     <!-- Footer-->
@@ -229,6 +554,80 @@
           },
         },
       });
+    </script>
+    <script>
+      // Function to edit an existing image
+      function editExistingImage(button) {
+        const imageDiv = button.closest(".mb-2");
+        const inputs = imageDiv.querySelectorAll("input, textarea");
+        inputs.forEach((input) => {
+          input.removeAttribute("readonly");
+          input.classList.remove("form-control-plaintext");
+          input.classList.add("form-control");
+        });
+        button.style.display = "none";
+        imageDiv.querySelector("button.btn-success").style.display =
+          "inline-block";
+      }
+
+      // Function to save changes to an existing image
+      function saveExistingImage(button) {
+        const imageDiv = button.closest(".mb-2");
+        const inputs = imageDiv.querySelectorAll("input, textarea");
+        inputs.forEach((input) => {
+          input.setAttribute("readonly", true);
+          input.classList.remove("form-control");
+          input.classList.add("form-control-plaintext");
+        });
+        button.style.display = "none";
+        imageDiv.querySelector("button.btn-secondary").style.display =
+          "inline-block";
+      }
+
+      // Function to add a new image input
+      function addImageInput() {
+        const imageInputs = document.getElementById("imageInputs");
+        const newInputDiv = document.createElement("div");
+        newInputDiv.classList.add("mb-2");
+        newInputDiv.innerHTML = `
+              <input type="file" class="form-control-file" name="gallery_images[]" multiple>
+              <input type="text" class="form-control mt-2" name="gallery_headers[]" placeholder="Image Header">
+              <textarea class="form-control mt-2" name="gallery_descriptions[]" placeholder="Image Description" rows="2"></textarea>
+          `;
+        imageInputs.appendChild(newInputDiv);
+      }
+    </script>
+    <script>
+      // Function to edit a field
+      function editField(fieldName) {
+        const field = document.getElementById(fieldName);
+        field.removeAttribute("readonly");
+        field.classList.remove("form-control-plaintext");
+        field.classList.add("form-control");
+        const editButton = document.querySelector(
+          `button[onclick="editField('${fieldName}')"`
+        );
+        const saveButton = document.querySelector(
+          `button[onclick="saveField('${fieldName}')"`
+        );
+        editButton.style.display = "none";
+        saveButton.style.display = "inline-block";
+      }
+      // Function to save a field
+      function saveField(fieldName) {
+        const field = document.getElementById(fieldName);
+        field.setAttribute("readonly", true);
+        field.classList.remove("form-control");
+        field.classList.add("form-control-plaintext");
+        const editButton = document.querySelector(
+          `button[onclick="editField('${fieldName}')"`
+        );
+        const saveButton = document.querySelector(
+          `button[onclick="saveField('${fieldName}')"`
+        );
+        editButton.style.display = "inline-block";
+        saveButton.style.display = "none";
+      }
     </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
