@@ -22,27 +22,33 @@
     <title>Brandlogs</title>
 </head>
 <body>
-    <header style="position: fixed; width: 100%; z-index: 2;">
-        <nav class="navbar navbar-expand-lg navbar-light border-bottom-0 nav-bottom-line">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="../LandingPage/landingPage.html"><img src="../Assets/images/Brandlogs Inc Logo NEW LOGO 14.08 1.png" style="width: 64px; height: 64px;" alt="Logo"/></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarScroll">
-                <form style="width: 100%;">
-                    <div class="form-group has-search">
-                        <span class="fa fa-search form-control-feedback"></span>
-                        <input type="text" class="form-control nav-search-bar" id="account-search" placeholder="Search by account name...">
-                    </div>
-                    <div id="suggestion-list"></div>
-                </form>
-                <button class="cta" data-toggle="modal" data-target="#first-modal">Accept invitation</button>
-              </div>
+  <header style="position: fixed; width: 100%; z-index: 2;">
+    <nav class="navbar navbar-expand-lg navbar-light border-bottom-0 nav-bottom-line">
+        <div class="container-fluid px-md-5">
+          <a class="navbar-brand" href="../LandingPage/landingPage.html"><img src="../Assets/images/Brandlogs Inc Logo NEW LOGO 14.08 1.png" style="width: 64px; height: 64px;" alt="Logo"/></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <form style="width: 100%;" class="d-md-flex justify-content-md-center">
+                <div class="form-group has-search  ">
+                    <span class="fa fa-search form-control-feedback"></span>
+                    <input type="text" class="form-control nav-search-bar" id="account-search" placeholder="Search by account name...">
+                </div>
+                <div id="suggestion-list"></div>
+            </form>
+            <div class="d-flex flex-column align-items-center"> 
+              <p>To Get $250 Bonus</p>
+              <button class="cta fw-bold" data-toggle="modal" data-target="#first-modal">Accept invitation</button>
+              
+            
             </div>
-          </nav>
-          <hr style="width: 100%; margin-top: -1px;"/>
-    </header>
+
+          </div>
+        </div>
+      </nav>
+      <hr style="width: 100%; margin-top: -1px;"/>
+</header>
     <main style="padding: 106px 0px;">
       <div class="wrapper">
         <!-- Sidebar Holder -->
@@ -85,25 +91,25 @@
       <div id="content">
         <!-- User Profile -->
         <div class="container py-4 pe-md-5 me-md-5">
-          <div class="d-flex mb-3 justify-content-between px-md-5">
+          <div class="d-flex mb-3 justify-content-between col-md-9 px-md-5">
             <a
               href="#"
               class="text-black profile-link"
             >
               <div class="d-flex align-items-center">
                 <img src="../Assets/images/tony.jpg" class="w-25 h-25" alt="" />
-                <h3 class="fw-bold ms-2 fs-6">Harman Hussein</h3>
+                <h3 class="fw-bold ms-2 fs-6">Tony Robbins</h3>
               </div>
             </a>
-            <a href="#">
-              <button class="btn font-weight-bold px-4 py-1" id="connect-btn" data-toggle="modal" data-target="#first-modal">
+            <a href="#" class="connect-bt " >
+              <button class="connect-btn" data-toggle="modal" data-target="#first-modal">
                 Connect
               </button>
             </a>
           </div>
-          <div class="">
+          <div class="col-md-9">
             <ul
-              class="d-flex list-group list-group-horizontal  px-md-5"
+              class="d-flex justify-between justify-content-md-center list-group list-group-horizontal  px-md-5"
             >
               <li class="list-group-item border-0">
                 <small>
@@ -134,13 +140,14 @@
               <li class="list-group-item border-0 border-success">
                 <a
                   href="../Bio/bio.html"
-                  class="profile-link text-black border-bottom  border-success"
+                  class="profile-link border-bottom border-success text-black"
                   >Bio</a
                 >
               </li>
               <li class="list-group-item border-0">
                 <a
-                  class="profile-link text-black"
+                class="profile-link text-black"
+                  
                   href="../LogStories/logstories.html"
                   >Log Stories</a
                 >
@@ -167,8 +174,10 @@
         <!-- First Modal -->
         <div class="modal fade" id="first-modal" data-backdrop="static" data-keyboard="false">
           <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content d-flex">
-
+            <div class="modal-content">
+              <div class="d-flex justify-content-end">
+                <button type="button" style="border: none; background-color: #DB2127; border-radius: 2px; color: white;" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              </div>
               <div class="modal-body">
                 <div class="d-flex justify-content-center">
                   <img class="img-fluid" src="../Assets/images/tony.jpg" alt="Tony Robbins"/>
@@ -191,15 +200,15 @@
         <!-- Second Modal -->
         <div class="modal" id="second-modal" data-backdrop="static" data-keyboard="false">
           <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content" style="padding-top: 30%;">
+            <div class="modal-content">
               <div class="modal-body">
                 <h4>Verify Phone Number</h4>
                 <br/>
-                <input type="tel" id="phone" style="width: 100%;" class="form-control">
-                <br/>
-                <div class="d-flex justify-content-center">
-                  <button class="modal-cta next-modal" data-dismiss="modal" data-target="#third-modal">Submit</button>
-                </div>
+                <input type="tel" id="phone" class="form-control">
+              </div>
+              <br/>
+              <div class="d-flex justify-content-center">
+                <button class="modal-cta next-modal" data-dismiss="modal" data-target="#third-modal">Submit</button>
               </div>
             </div>
           </div>
@@ -226,16 +235,16 @@
                           <input type="number" disabled />
                         </div>              
                       </div>
-                      <div class="d-flex justify-content-center" style="margin-top: -70px; position: relative; z-index: 2;">
-                        <button class="modal-cta next-modal" data-dismiss="modal" data-target="#fourth-modal">Submit</button>
-                      </div>
-                      <p class="resend text-muted mb-0">
-                        Didn't receive code? <a href="">Request again</a>
-                      </p>
                     </div>
                   </div>
                 </div>
               </div>
+              <div class="d-flex justify-content-center" style="margin-top: -70px; position: relative; z-index: 2;">
+                <button class="modal-cta next-modal" data-dismiss="modal" data-target="#fourth-modal">Submit</button>
+              </div>
+              <p class="resend text-muted mb-0">
+                Didn't receive code? <a href="">Request again</a>
+              </p>
               <br/>
             </div>
           </div>
@@ -246,35 +255,36 @@
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <div class="modal-body">
-                <h4>Create Profile</h4>
+                <h4>Profile</h4>
                 <br/>
                 <div class="container">
                   <div class="row">
-                      <div class="">                        
+                      <div class="">
+                        <div class="d-flex justify-content-center">
+                          <div class="profile-pic">            
+                            <img alt="User Pic" src="https://d30y9cdsu7xlg0.cloudfront.net/png/138926-200.png" id="profile-image1" height="200">
+                            <input id="profile-image-upload" class="hidden" hidden type="file" onchange="previewFile()" >
+                            <div style="color:#999;" >  </div>                                  
+                          </div>
+                        </div>
+                        
                         <div class="user-detail">
                           <p class="text-start">Name</p>
                           <div class="form-group">  
                             <input type="text" class="form-control" id="name" placeholder="Enter your Name" name="name">
                           </div>
-                          <br/>                                                        
-                        </div>
-                        <p>When is your Birthday?</p>
-                        <form class = "container">
-                          <SELECT class="dob-input" id ="year" name = "yyyy" onchange="change_year(this)">
-                          </SELECT>
-                          <SELECT class="dob-input" id ="month" name = "mm" onchange="change_month(this)">
-                          </SELECT>
-                          <SELECT class="dob-input" id ="day" name = "dd" >
-                          </SELECT>
-                        <br />
-                        <br />
-                      </form>
-                        <div class="d-flex justify-content-center my-1" style="margin-top: -70px; position: relative; z-index: 2;">
-                          <button class="modal-cta next-modal" data-dismiss="modal" data-target="#fifth-modal">Create Profile</button>
+                          <br/>
+                          <p class="text-start">Bio</p>
+                          <div class="form-group">  
+                            <textarea type="text" class="form-control" id="bio" placeholder="Input your Bio" name="bio"></textarea>
+                          </div>                                                          
                         </div>
                       </div>
                     </div>
                   </div>
+                </div>
+                <div class="d-flex justify-content-center my-1" style="margin-top: -70px; position: relative; z-index: 2;">
+                  <button class="modal-cta next-modal" data-dismiss="modal" data-target="#fifth-modal">Create Profile</button>
                 </div>
             </div>
           </div>
@@ -283,94 +293,22 @@
         <!-- Fifth Modal -->
         <div class="modal" id="fifth-modal" data-backdrop="static" data-keyboard="false">
           <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content" style="padding-top: 150px;">
-              <div class="modal-body">
-                <h4>Create Profile image</h4>
-                <br/>
-                <div class="d-flex justify-content-center">
-                  <div class="profile-pic">            
-                    <img alt="User Pic" src="https://d30y9cdsu7xlg0.cloudfront.net/png/138926-200.png" id="profile-image1" height="200">
-                    <input id="profile-image-upload" class="hidden" hidden type="file" onchange="previewFile()" >
-                    <div style="color:#999;" >  </div>                                  
-                  </div>
-                </div>
-                <div class="d-flex justify-content-center my-1" style="margin-top: -70px; position: relative; z-index: 2;">
-                  <button class="modal-cta next-modal" data-dismiss="modal" data-target="#sixth-modal">Submit</button>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-        <!-- sixth Modal -->
-        <div class="modal" id="sixth-modal" data-backdrop="static" data-keyboard="false">
-          <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <div class="modal-body">
-                <h4>Payment Method</h4>
-                <hr/>
-                <p>Payment amount: </p>
-                <h4>$5</h4>
-                <div class="row mt-4">
-                  <div class="col-md-12 form-group">
-                      <label for="card-name">Name on card</label>
-                      <input type="text" class="form-control" id="card-name" placeholder >
-                      <div class="invalid-feedback">
-                        Name on card is required
-                      </div>
-                    </div>
-        
-                    <div class="col-md-12 form-group">
-                      <label for="card-no">Card Number</label>
-                      <input type="text" class="form-control" id="card-no" placeholder >
-                      <div class="invalid-feedback">
-                        Credit card number is required
-                      </div>
-                    </div>
-                </div>
-        
-                <div class="row ">
-                  <div class="col-6 form-group">
-                      <label for="expiration">Expiration Date</label>
-                      <input type="text" class="form-control" id="card-name" placeholder >
-                      <div class="invalid-feedback">
-                        Expiration date required
-                      </div>
-                    </div>
-                  
-        
-                  <div class="col-6 form-group">
-                      <label for="ccv-no">CVV</label>
-                      <input type="text" class="form-control" id="sec-no" placeholder >
-                      <div class="invalid-feedback">
-                        Security code required
-                      </div>
-                  </div>
+                <h1>Congratulations!</h1>
+                <br/>
+                <p>
+                  Your Profile has been created successfully. We have
+                  awarded you $250 bonus.
+                </p>
+                <br/>
+                <div class="d-flex justify-content-center">
+                  <input type="checkbox" class="" name="accept" />
+                  <span>&nbsp;&nbsp; I have read and accepted <a href="../TermsAndConditions/termsAndConditions.html">terms of use</a></span>
                 </div>
               </div>
               <div class="d-flex justify-content-center my-1" style="margin-top: -70px; position: relative; z-index: 2;">
-                <button class="modal-cta next-modal" data-dismiss="modal" data-target="#seventh-modal"><i class="fa fa-lock"></i>Pay $5.00</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- seventh Modal -->
-        <div class="modal" id="seventh-modal" data-backdrop="static" data-keyboard="false">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content" style="padding-top: 150px;">
-              <div class="modal-body">
-            
-                <br/>
-                <div class="card-content">
-                    <p class="text-center" style="font-size: 18px;">Your account has been created
-                      Successfully. We will be sending
-                      weekly updates.</p>
-                      <div class="d-flex justify-content-center">
-                        <button class="modal-cta next-modal" onclick="navigateProfile()" >Complete</button>
-                    </div>
-                </div>
+                <button class="modal-cta next-modal" data-dismiss="modal" onclick="navigateCheckOut()">Complete</button>
               </div>
             </div>
           </div>
@@ -439,13 +377,6 @@
     <!-- Scripts-->
     <!-- Scripts-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.4/js/utils.js"></script>
-
-    <script>
-            
-      function navigateProfile(){
-  window.location.href = "../Logstories/logstories.html"
-}
-</script>
 
     <!-- Navigate to Checkout -->
     <script>

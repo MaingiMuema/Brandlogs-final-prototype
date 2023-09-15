@@ -169,8 +169,10 @@
         <!-- First Modal -->
         <div class="modal fade" id="first-modal" data-backdrop="static" data-keyboard="false">
           <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content d-flex">
-
+            <div class="modal-content">
+              <div class="d-flex justify-content-end">
+                <button type="button" style="border: none; background-color: #DB2127; border-radius: 2px; color: white;" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              </div>
               <div class="modal-body">
                 <div class="d-flex justify-content-center">
                   <img class="img-fluid" src="../Assets/images/tony.jpg" alt="Tony Robbins"/>
@@ -193,15 +195,15 @@
         <!-- Second Modal -->
         <div class="modal" id="second-modal" data-backdrop="static" data-keyboard="false">
           <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content" style="padding-top: 30%;">
+            <div class="modal-content">
               <div class="modal-body">
                 <h4>Verify Phone Number</h4>
                 <br/>
-                <input type="tel" id="phone" style="width: 100%;" class="form-control">
-                <br/>
-                <div class="d-flex justify-content-center">
-                  <button class="modal-cta next-modal" data-dismiss="modal" data-target="#third-modal">Submit</button>
-                </div>
+                <input type="tel" id="phone" class="form-control">
+              </div>
+              <br/>
+              <div class="d-flex justify-content-center">
+                <button class="modal-cta next-modal" data-dismiss="modal" data-target="#third-modal">Submit</button>
               </div>
             </div>
           </div>
@@ -228,16 +230,16 @@
                           <input type="number" disabled />
                         </div>              
                       </div>
-                      <div class="d-flex justify-content-center" style="margin-top: -70px; position: relative; z-index: 2;">
-                        <button class="modal-cta next-modal" data-dismiss="modal" data-target="#fourth-modal">Submit</button>
-                      </div>
-                      <p class="resend text-muted mb-0">
-                        Didn't receive code? <a href="">Request again</a>
-                      </p>
                     </div>
                   </div>
                 </div>
               </div>
+              <div class="d-flex justify-content-center" style="margin-top: -70px; position: relative; z-index: 2;">
+                <button class="modal-cta next-modal" data-dismiss="modal" data-target="#fourth-modal">Submit</button>
+              </div>
+              <p class="resend text-muted mb-0">
+                Didn't receive code? <a href="">Request again</a>
+              </p>
               <br/>
             </div>
           </div>
@@ -248,35 +250,36 @@
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <div class="modal-body">
-                <h4>Create Profile</h4>
+                <h4>Profile</h4>
                 <br/>
                 <div class="container">
                   <div class="row">
-                      <div class="">                        
+                      <div class="">
+                        <div class="d-flex justify-content-center">
+                          <div class="profile-pic">            
+                            <img alt="User Pic" src="https://d30y9cdsu7xlg0.cloudfront.net/png/138926-200.png" id="profile-image1" height="200">
+                            <input id="profile-image-upload" class="hidden" hidden type="file" onchange="previewFile()" >
+                            <div style="color:#999;" >  </div>                                  
+                          </div>
+                        </div>
+                        
                         <div class="user-detail">
                           <p class="text-start">Name</p>
                           <div class="form-group">  
                             <input type="text" class="form-control" id="name" placeholder="Enter your Name" name="name">
                           </div>
-                          <br/>                                                        
-                        </div>
-                        <p>When is your Birthday?</p>
-                        <form class = "container">
-                          <SELECT class="dob-input" id ="year" name = "yyyy" onchange="change_year(this)">
-                          </SELECT>
-                          <SELECT class="dob-input" id ="month" name = "mm" onchange="change_month(this)">
-                          </SELECT>
-                          <SELECT class="dob-input" id ="day" name = "dd" >
-                          </SELECT>
-                        <br />
-                        <br />
-                      </form>
-                        <div class="d-flex justify-content-center my-1" style="margin-top: -70px; position: relative; z-index: 2;">
-                          <button class="modal-cta next-modal" data-dismiss="modal" data-target="#fifth-modal">Create Profile</button>
+                          <br/>
+                          <p class="text-start">Bio</p>
+                          <div class="form-group">  
+                            <textarea type="text" class="form-control" id="bio" placeholder="Input your Bio" name="bio"></textarea>
+                          </div>                                                          
                         </div>
                       </div>
                     </div>
                   </div>
+                </div>
+                <div class="d-flex justify-content-center my-1" style="margin-top: -70px; position: relative; z-index: 2;">
+                  <button class="modal-cta next-modal" data-dismiss="modal" data-target="#fifth-modal">Create Profile</button>
                 </div>
             </div>
           </div>
@@ -285,94 +288,22 @@
         <!-- Fifth Modal -->
         <div class="modal" id="fifth-modal" data-backdrop="static" data-keyboard="false">
           <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content" style="padding-top: 150px;">
-              <div class="modal-body">
-                <h4>Create Profile image</h4>
-                <br/>
-                <div class="d-flex justify-content-center">
-                  <div class="profile-pic">            
-                    <img alt="User Pic" src="https://d30y9cdsu7xlg0.cloudfront.net/png/138926-200.png" id="profile-image1" height="200">
-                    <input id="profile-image-upload" class="hidden" hidden type="file" onchange="previewFile()" >
-                    <div style="color:#999;" >  </div>                                  
-                  </div>
-                </div>
-                <div class="d-flex justify-content-center my-1" style="margin-top: -70px; position: relative; z-index: 2;">
-                  <button class="modal-cta next-modal" data-dismiss="modal" data-target="#sixth-modal">Submit</button>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-        <!-- sixth Modal -->
-        <div class="modal" id="sixth-modal" data-backdrop="static" data-keyboard="false">
-          <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <div class="modal-body">
-                <h4>Payment Method</h4>
-                <hr/>
-                <p>Payment amount: </p>
-                <h4>$5</h4>
-                <div class="row mt-4">
-                  <div class="col-md-12 form-group">
-                      <label for="card-name">Name on card</label>
-                      <input type="text" class="form-control" id="card-name" placeholder >
-                      <div class="invalid-feedback">
-                        Name on card is required
-                      </div>
-                    </div>
-        
-                    <div class="col-md-12 form-group">
-                      <label for="card-no">Card Number</label>
-                      <input type="text" class="form-control" id="card-no" placeholder >
-                      <div class="invalid-feedback">
-                        Credit card number is required
-                      </div>
-                    </div>
-                </div>
-        
-                <div class="row ">
-                  <div class="col-6 form-group">
-                      <label for="expiration">Expiration Date</label>
-                      <input type="text" class="form-control" id="card-name" placeholder >
-                      <div class="invalid-feedback">
-                        Expiration date required
-                      </div>
-                    </div>
-                  
-        
-                  <div class="col-6 form-group">
-                      <label for="ccv-no">CVV</label>
-                      <input type="text" class="form-control" id="sec-no" placeholder >
-                      <div class="invalid-feedback">
-                        Security code required
-                      </div>
-                  </div>
+                <h1>Congratulations!</h1>
+                <br/>
+                <p>
+                  Your Profile has been created successfully. We have
+                  awarded you $250 bonus.
+                </p>
+                <br/>
+                <div class="d-flex justify-content-center">
+                  <input type="checkbox" class="" name="accept" />
+                  <span>&nbsp;&nbsp; I have read and accepted <a href="../TermsAndConditions/termsAndConditions.html">terms of use</a></span>
                 </div>
               </div>
               <div class="d-flex justify-content-center my-1" style="margin-top: -70px; position: relative; z-index: 2;">
-                <button class="modal-cta next-modal" data-dismiss="modal" data-target="#seventh-modal"><i class="fa fa-lock"></i>Pay $5.00</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- seventh Modal -->
-        <div class="modal" id="seventh-modal" data-backdrop="static" data-keyboard="false">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content" style="padding-top: 150px;">
-              <div class="modal-body">
-            
-                <br/>
-                <div class="card-content">
-                    <p class="text-center" style="font-size: 18px;">Your account has been created
-                      Successfully. We will be sending
-                      weekly updates.</p>
-                      <div class="d-flex justify-content-center">
-                        <button class="modal-cta next-modal" onclick="navigateProfile()" >Complete</button>
-                    </div>
-                </div>
+                <button class="modal-cta next-modal" data-dismiss="modal" onclick="navigateCheckOut()">Complete</button>
               </div>
             </div>
           </div>
@@ -448,13 +379,6 @@
         window.location.href = "../Checkout/checkout.html"
       }
     </script>
-
-<script>
-            
-  function navigateProfile(){
-window.location.href = "../Logstories/logstories.html"
-}
-</script>
 
     <!-- Photo Upload -->
     <script>
