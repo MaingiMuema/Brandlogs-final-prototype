@@ -874,45 +874,275 @@
 
       <!-- End of Connect Container -->
 
-      <!-- Modals -->
-      <div class="container text-center">
-        <!-- First Modal -->
+        <!-- Modals -->
+        <div class="container text-center">
+          <!-- First Modal -->
 
-        <div
-          class="modal"
-          id="first-modal"
-          data-backdrop="static"
-          data-keyboard="false"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-body">
+          <div
+            class="modal"
+            id="first-modal"
+            data-backdrop="static"
+            data-keyboard="false"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="d-flex justify-content-end">
+                  <button type="button" class="close btn-danger" style="border-radius: 3px; position: absolute; top: 0;" data-dismiss="modal" aria-label="Close" id="close-button">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <br />
+                  <div class="container">
+                    <div class="row">
+                      <div class="">
+                        <div class="user-detail p-5">
+                          <form>
+                            <p class="text-start text-capitalize fs-6">
+                              Kindly input your invitation code below
+                            </p>
+                            <div class="form-group">
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="name"
+                                placeholder="Enter your invitation code"
+                                name="name"
+                              />
+                            </div>
+                          </form>
+                          <div class="d-flex justify-content-center mt-3">
+                            <button
+                              class="modal-cta next-modal w-100"
+                              data-dismiss="modal"
+                              data-target="#second-modal"
+                            >
+                              Confirm
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Second Modal -->
+
+          <div
+            class="modal fade"
+            id="second-modal"
+            data-backdrop="static"
+            data-keyboard="false"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content d-flex">
+                <div class="d-flex justify-content-end">
+                  <button type="button" class="close btn-danger" style="border-radius: 3px; position: absolute; top: 0;" data-dismiss="modal" aria-label="Close" id="close-button2">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="d-flex justify-content-center">
+                    <img
+                      class="img-fluid"
+                      src="../Assets/images/tony.jpg"
+                      alt="Tony Robbins"
+                    />
+                  </div>
+                  <br />
+                  <div class="card-content">
+                    <h3 class="text-center" style="margin-top: -12px">
+                      <b>Tonny Robbins</b>
+                    </h3>
+                    <br />
+                    <p class="text-center" style="font-size: 18px">
+                      Tonny Robbins has gifted you $50
+                    </p>
+                    <p class="text-center" style="font-size: 18px">
+                      Fullfil a 2-way gift pledge to redeem
+                    </p>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <button
+                      class="modal-cta next-modal"
+                      data-dismiss="modal"
+                      data-target="#third-modal"
+                    >
+                      Get started
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Third Modal -->
+          <div
+            class="modal"
+            id="third-modal"
+            data-backdrop="static"
+            data-keyboard="false"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content" style="padding-top: 30%">
+                <div class="d-flex justify-content-end">
+                  <button type="button" class="close btn-danger" style="border-radius: 3px; position: absolute; top: 0;" data-dismiss="modal" aria-label="Close" id="close-button3">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <h4>Verify Phone Number</h4>
+                  <br />
+                  <div style="width: 100%">
+                    <input type="tel" id="phone" class="form-control" />
+                  </div>
+                  <br />
+                  <div class="d-flex justify-content-center">
+                    <button
+                      class="modal-cta next-modal"
+                      data-dismiss="modal"
+                      data-target="#fourth-modal"
+                    >
+                      Submit
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fourth Modal -->
+          <div
+            class="modal"
+            id="fourth-modal"
+            data-backdrop="static"
+            data-keyboard="false"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content" id="modal-content">
+                <div class="d-flex justify-content-end">
+                  <button type="button" class="close btn-danger" style="border-radius: 3px; position: absolute; top: 0;" data-dismiss="modal" aria-label="Close" id="close-button4">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="row justify-content-center">
+                    <div
+                      class="col-12 col-md-6 col-lg-4"
+                      style="min-width: 500px"
+                    >
+                      <div
+                        class="card bg-white mb-5 mt-5 border-0"
+                        style="box-shadow: 0 12px 15px rgba(0, 0, 0, 0.02)"
+                      >
+                        <div class="card-body p-5 text-center">
+                          <h4>Verify</h4>
+                          <p>Your code was sent to you via phone</p>
+
+                          <div class="otp-field mb-4">
+                            <input type="number" />
+                            <input type="number" disabled />
+                            <input type="number" disabled />
+                            <input type="number" disabled />
+                            <input type="number" disabled />
+                            <input type="number" disabled />
+                          </div>
+                        </div>
+                        <div
+                          class="d-flex justify-content-center"
+                          style="
+                            margin-top: -70px;
+                            position: relative;
+                            z-index: 2;
+                          "
+                        >
+                          <button
+                            class="modal-cta next-modal"
+                            data-dismiss="modal"
+                            data-target="#fifth-modal"
+                          >
+                            Submit
+                          </button>
+                        </div>
+                        <p class="resend text-muted mb-0">
+                          Didn't receive code? <a href="">Request again</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <br />
-                <div class="container">
-                  <div class="row">
-                    <div class="">
-                      <div class="user-detail p-5">
-                        <form>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fifth Modal -->
+          <div
+            class="modal"
+            id="fifth-modal"
+            data-backdrop="static"
+            data-keyboard="false"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="d-flex justify-content-end">
+                  <button type="button" class="close btn-danger" style="border-radius: 3px; position: absolute; top: 0;" data-dismiss="modal" aria-label="Close" id="close-button5">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <h4>When is your Birthday?</h4>
+                  <br />
+                  <div class="container">
+                    <div class="row">
+                      <div class="p-2">
+                        <p></p>
+                        <form class="container">
+                          <select
+                            class="dob-input"
+                            id="year"
+                            name="yyyy"
+                            onchange="change_year(this)"
+                          ></select>
+                          <select
+                            class="dob-input"
+                            id="month"
+                            name="mm"
+                            onchange="change_month(this)"
+                          ></select>
+                          <select class="dob-input" id="day" name="dd"></select>
+                          <br />
+                          <br />
+                        </form>
+                        <div class="user-detail">
                           <p class="text-start text-capitalize fs-6">
-                            Kindly input your invitation code below
+                            Enter Username
                           </p>
                           <div class="form-group">
                             <input
                               type="text"
                               class="form-control"
                               id="name"
-                              placeholder="Enter your invitation code"
+                              placeholder="Username"
                               name="name"
                             />
                           </div>
-                        </form>
-                        <div class="d-flex justify-content-center mt-3">
+                          <br />
+                        </div>
+
+                        <div
+                          class="d-flex justify-content-center"
+                          style="position: relative; z-index: 2"
+                        >
                           <button
-                            class="modal-cta next-modal w-100"
+                            class="modal-cta next-modal"
                             data-dismiss="modal"
-                            data-target="#second-modal"
+                            data-target="#sixth-modal"
                           >
-                            Confirm
+                            Create Profile
                           </button>
                         </div>
                       </div>
@@ -922,74 +1152,68 @@
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Second Modal -->
-
-        <div
-          class="modal fade"
-          id="second-modal"
-          data-backdrop="static"
-          data-keyboard="false"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content d-flex">
-              <div class="modal-body">
-                <div class="d-flex justify-content-center">
-                  <img
-                    class="img-fluid"
-                    src="../Assets/images/tony.jpg"
-                    alt="Tony Robbins"
-                  />
-                </div>
-                <br />
-                <div class="card-content">
-                  <h3 class="text-center" style="margin-top: -12px">
-                    <b>Tonny Robbins</b>
-                  </h3>
-                  <br />
-                  <p class="text-center" style="font-size: 18px">
-                    Tonny Robbins has gifted you $50
-                  </p>
-                  <p class="text-center" style="font-size: 18px">
-                    Fullfil a 2-way gift pledge to redeem
-                  </p>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <button
-                    class="modal-cta next-modal"
-                    data-dismiss="modal"
-                    data-target="#third-modal"
-                  >
-                    Get started
+          <!-- Sixth Modal -->
+          <div
+            class="modal"
+            id="sixth-modal"
+            data-backdrop="static"
+            data-keyboard="false"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content" style="padding-top: 150px">
+                <div class="d-flex justify-content-end">
+                  <button type="button" class="close btn-danger" style="border-radius: 3px; position: absolute; top: 0;" data-dismiss="modal" aria-label="Close" id="close-button6">
+                    <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
+                <div class="modal-body">
+                  <h4>Profile Photo</h4>
+                  <br />
+                  <!-- Image upload -->
+                  <div
+                    class="circle position-relative display-2 d-flex align-items-center justify-content-center mb-3"
+                  >
+                    <div class="profile-pic">
+                      <img
+                        alt="User Pic"
+                        src="https://d30y9cdsu7xlg0.cloudfront.net/png/138926-200.png"
+                        id="profile-image1"
+                        height="200"
+                      />
+                      <div style="color: #999"></div>
+                    </div>
+                  </div>
 
-        <!-- Third Modal -->
-        <div
-          class="modal"
-          id="third-modal"
-          data-backdrop="static"
-          data-keyboard="false"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content" style="padding-top: 30%">
-              <div class="modal-body">
-                <h4>Verify Phone Number</h4>
-                <br />
-                <div style="width: 100%">
-                  <input type="tel" id="phone" class="form-control" />
+                  <input type="file" id="customFile" name="file" hidden="" />
+                  <label
+                    style="background-color: #db2127; color: #fff"
+                    class="btn btn-success-soft btn-block"
+                    for="customFile"
+                    >Upload</label
+                  >
+                  <button
+                    type="button"
+                    class="btn btn-secondary next-modal"
+                    data-dismiss="modal"
+                    data-target="#seventh-modal"
+                  >
+                    Skip
+                  </button>
                 </div>
-                <br />
-                <div class="d-flex justify-content-center">
+                <div
+                  class="d-flex justify-content-center my-1"
+                  style="
+                    margin-top: -70px;
+                    position: relative;
+                    z-index: 2;
+                    padding: 20px;
+                  "
+                >
                   <button
                     class="modal-cta next-modal"
                     data-dismiss="modal"
-                    data-target="#fourth-modal"
+                    data-target="#seventh-modal"
                   >
                     Submit
                   </button>
@@ -997,373 +1221,50 @@
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Fourth Modal -->
-        <div
-          class="modal"
-          id="fourth-modal"
-          data-backdrop="static"
-          data-keyboard="false"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content" id="modal-content">
-              <div class="modal-body">
-                <div class="row justify-content-center">
-                  <div
-                    class="col-12 col-md-6 col-lg-4"
-                    style="min-width: 500px"
-                  >
-                    <div
-                      class="card bg-white mb-5 mt-5 border-0"
-                      style="box-shadow: 0 12px 15px rgba(0, 0, 0, 0.02)"
-                    >
-                      <div class="card-body p-5 text-center">
-                        <h4>Verify</h4>
-                        <p>Your code was sent to you via phone</p>
+          <!-- seventh modal -->
 
-                        <div class="otp-field mb-4">
-                          <input type="number" />
-                          <input type="number" disabled />
-                          <input type="number" disabled />
-                          <input type="number" disabled />
-                          <input type="number" disabled />
-                          <input type="number" disabled />
-                        </div>
-                      </div>
-                      <div
-                        class="d-flex justify-content-center"
-                        style="
-                          margin-top: -70px;
-                          position: relative;
-                          z-index: 2;
-                        "
-                      >
-                        <button
-                          class="modal-cta next-modal"
-                          data-dismiss="modal"
-                          data-target="#fifth-modal"
-                        >
-                          Submit
-                        </button>
-                      </div>
-                      <p class="resend text-muted mb-0">
-                        Didn't receive code? <a href="">Request again</a>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <br />
-            </div>
-          </div>
-        </div>
-
-        <!-- Fifth Modal -->
-        <div
-          class="modal"
-          id="fifth-modal"
-          data-backdrop="static"
-          data-keyboard="false"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-body">
-                <h4>When is your Birthday?</h4>
-                <br />
-                <div class="container">
-                  <div class="row">
-                    <div class="p-2">
-                      <p></p>
-                      <form class="container">
-                        <select
-                          class="dob-input"
-                          id="year"
-                          name="yyyy"
-                          onchange="change_year(this)"
-                        ></select>
-                        <select
-                          class="dob-input"
-                          id="month"
-                          name="mm"
-                          onchange="change_month(this)"
-                        ></select>
-                        <select class="dob-input" id="day" name="dd"></select>
-                        <br />
-                        <br />
-                      </form>
-                      <div class="user-detail">
-                        <p class="text-start text-capitalize fs-6">
-                          Enter Username
-                        </p>
-                        <div class="form-group">
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="name"
-                            placeholder="Username"
-                            name="name"
-                          />
-                        </div>
-                        <br />
-                      </div>
-
-                      <div
-                        class="d-flex justify-content-center"
-                        style="position: relative; z-index: 2"
-                      >
-                        <button
-                          class="modal-cta next-modal"
-                          data-dismiss="modal"
-                          data-target="#sixth-modal"
-                        >
-                          Create Profile
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Sixth Modal -->
-        <div
-          class="modal"
-          id="sixth-modal"
-          data-backdrop="static"
-          data-keyboard="false"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content" style="padding-top: 150px">
-              <div class="modal-body">
-                <h4>Profile Photo</h4>
-                <br />
-                <!-- Image upload -->
-                <div
-                  class="circle position-relative display-2 d-flex align-items-center justify-content-center mb-3"
-                >
-                  <div class="profile-pic">
-                    <img
-                      alt="User Pic"
-                      src="https://d30y9cdsu7xlg0.cloudfront.net/png/138926-200.png"
-                      id="profile-image1"
-                      height="200"
-                    />
-                    <div style="color: #999"></div>
-                  </div>
-                </div>
-
-                <input type="file" id="customFile" name="file" hidden="" />
-                <label
-                  style="background-color: #db2127; color: #fff"
-                  class="btn btn-success-soft btn-block"
-                  for="customFile"
-                  >Upload</label
-                >
-                <button
-                  type="button"
-                  class="btn btn-secondary next-modal"
-                  data-dismiss="modal"
-                  data-target="#seventh-modal"
-                >
-                  Skip
-                </button>
-              </div>
-              <div
-                class="d-flex justify-content-center my-1"
-                style="
-                  margin-top: -70px;
-                  position: relative;
-                  z-index: 2;
-                  padding: 20px;
-                "
-              >
-                <button
-                  class="modal-cta next-modal"
-                  data-dismiss="modal"
-                  data-target="#seventh-modal"
-                >
-                  Submit
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- seventh modal -->
-
-        <div
-          class="modal fade"
-          id="seventh-modal"
-          data-backdrop="static"
-          data-keyboard="false"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content d-flex">
-              <div class="modal-body">
-                <h4>Congratulations!</h4>
-                <br />
-                <div class="card-content">
-                  <p class="text-center" style="font-size: 18px">
-                    Your profile has been created successfully. We have awarded
-                    you $250 bonus reward.
-                  </p>
-                  <div class="d-flex justify-content-center gap-2 form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="flexCheckDefault"
-                    />
-                    <label class="form-check-label" for="flexCheckDefault">
-                      I have read and accepted
-                      <a href="../TermsAndConditions/termsAndConditions.html"
-                        >terms of use</a
-                      >
-                    </label>
-                  </div>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <button
-                    class="modal-cta next-modal"
-                    data-dismiss="modal"
-                    data-target="#eigth-modal"
-                  >
-                    Complete
+          <div
+            class="modal fade"
+            id="seventh-modal"
+            data-backdrop="static"
+            data-keyboard="false"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content d-flex">
+                <div class="d-flex justify-content-end">
+                  <button type="button" class="close btn-danger" style="border-radius: 3px; position: absolute; top: 0;" data-dismiss="modal" aria-label="Close" id="close-button7">
+                    <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- eigth Modal -->
-        <div
-          class="modal"
-          id="eigth-modal"
-          data-backdrop="static"
-          data-keyboard="false"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-body">
-                <h4>Payment Method</h4>
-                <hr />
-                <div class="form-check form-check-inline">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="bankcard"
-                    id="inlineRadio1"
-                    value="option1"
-                  />
-                  <label class="form-check-label" for="inlineRadio1"
-                    >Debit card</label
-                  >
-                </div>
-
-                <div class="form-check form-check-inline">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="bankcard"
-                    id="inlineRadio1"
-                    value="option1"
-                  />
-                  <label class="form-check-label" for="inlineRadio1"
-                    >Credit card</label
-                  >
-                </div>
-                <p>Payment amount:</p>
-                <h4>$10</h4>
-                <div class="row mt-4">
-                  <div class="col-md-12 form-group">
-                    <label for="card-name">Name on card</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="card-name"
-                      placeholder
-                    />
-                    <div class="invalid-feedback">Name on card is required</div>
-                  </div>
-
-                  <div class="col-md-12 form-group">
-                    <label for="card-no">Card Number</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="card-no"
-                      placeholder
-                    />
-                    <div class="invalid-feedback">
-                      Credit card number is required
+                <div class="modal-body">
+                  <h4>Congratulations!</h4>
+                  <br />
+                  <div class="card-content">
+                    <p class="text-center" style="font-size: 18px">
+                      Your profile has been created successfully. We have
+                      awarded you $250 bonus reward.
+                    </p>
+                    <div class="d-flex justify-content-center gap-2 form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                      />
+                      <label class="form-check-label" for="flexCheckDefault">
+                        I have read and accepted
+                        <a href="../TermsAndConditions/termsAndConditions.html"
+                          >terms of use</a
+                        >
+                      </label>
                     </div>
                   </div>
-                </div>
-
-                <div class="row">
-                  <div class="col-6 form-group">
-                    <label for="expiration">Expiration Date</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="card-name"
-                      placeholder
-                    />
-                    <div class="invalid-feedback">Expiration date required</div>
-                  </div>
-
-                  <div class="col-6 form-group">
-                    <label for="ccv-no">CVV</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="sec-no"
-                      placeholder
-                    />
-                    <div class="invalid-feedback">Security code required</div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="d-flex justify-content-center my-1 p-3"
-                style="margin-top: -70px; position: relative; z-index: 2"
-              >
-                <button
-                  class="modal-cta next-modal"
-                  data-dismiss="modal"
-                  data-target="#ninth-modal"
-                >
-                  <i class="fa fa-lock"></i>Pay $10.00
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- eigth Modal -->
-        <div
-          class="modal"
-          id="ninth-modal"
-          data-backdrop="static"
-          data-keyboard="false"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content" style="padding-top: 150px">
-              <div class="modal-body">
-                <br />
-                <div class="card-content">
-                  <p class="text-center" style="font-size: 18px">
-                    Your account has been created Successfully. We will be
-                    sending weekly updates.
-                  </p>
                   <div class="d-flex justify-content-center">
                     <button
                       class="modal-cta next-modal"
-                      onclick="navigateProfile()"
+                      data-dismiss="modal"
+                      data-target="#eigth-modal"
                     >
                       Complete
                     </button>
@@ -1372,8 +1273,156 @@
               </div>
             </div>
           </div>
+
+          <!-- eigth Modal -->
+          <div
+            class="modal"
+            id="eigth-modal"
+            data-backdrop="static"
+            data-keyboard="false"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="d-flex justify-content-end">
+                  <button type="button" class="close btn-danger" style="border-radius: 3px; position: absolute; top: 0;" data-dismiss="modal" aria-label="Close" id="close-button8">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <h4>Payment Method</h4>
+                  <hr />
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="bankcard"
+                      id="inlineRadio1"
+                      value="option1"
+                    />
+                    <label class="form-check-label" for="inlineRadio1"
+                      >Debit card</label
+                    >
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="bankcard"
+                      id="inlineRadio1"
+                      value="option1"
+                    />
+                    <label class="form-check-label" for="inlineRadio1"
+                      >Credit card</label
+                    >
+                  </div>
+                  <p>Payment amount:</p>
+                  <h4>$10</h4>
+                  <div class="row mt-4">
+                    <div class="col-md-12 form-group">
+                      <label for="card-name">Name on card</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="card-name"
+                        placeholder
+                      />
+                      <div class="invalid-feedback">
+                        Name on card is required
+                      </div>
+                    </div>
+
+                    <div class="col-md-12 form-group">
+                      <label for="card-no">Card Number</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="card-no"
+                        placeholder
+                      />
+                      <div class="invalid-feedback">
+                        Credit card number is required
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-6 form-group">
+                      <label for="expiration">Expiration Date</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="card-name"
+                        placeholder
+                      />
+                      <div class="invalid-feedback">
+                        Expiration date required
+                      </div>
+                    </div>
+
+                    <div class="col-6 form-group">
+                      <label for="ccv-no">CVV</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="sec-no"
+                        placeholder
+                      />
+                      <div class="invalid-feedback">Security code required</div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="d-flex justify-content-center my-1 p-3"
+                  style="margin-top: -70px; position: relative; z-index: 2"
+                >
+                  <button
+                    class="modal-cta next-modal"
+                    data-dismiss="modal"
+                    data-target="#ninth-modal"
+                  >
+                    <i class="fa fa-lock"></i>Pay $10.00
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Nineth Modal -->
+          <div
+            class="modal"
+            id="ninth-modal"
+            data-backdrop="static"
+            data-keyboard="false"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content" style="padding-top: 150px">
+                <div class="d-flex justify-content-end">
+                  <button type="button" class="close btn-danger" style="border-radius: 3px; position: absolute; top: 0;" data-dismiss="modal" aria-label="Close" id="close-button9">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <br />
+                  <div class="card-content">
+                    <p class="text-center" style="font-size: 18px">
+                      Your account has been created Successfully. We will be
+                      sending weekly updates.
+                    </p>
+                    <div class="d-flex justify-content-center">
+                      <button
+                        class="modal-cta next-modal"
+                        onclick="navigateProfile()"
+                      >
+                        Complete
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
     </main>
     <!-- Footer-->
     <footer class="bg-success py-5">
@@ -1474,6 +1523,84 @@
         window.location.href = "../Checkout/checkout.html";
       }
     </script>
+
+        <!-- close the modal using the close button -->
+        <script>
+          // Get a reference to the close button and the modal by ID
+          const closeButton = document.getElementById("close-button");
+          const modal = document.getElementById("first-modal");
+    
+          const closeButton2 = document.getElementById("close-button2");
+          const modal2 = document.getElementById("second-modal");
+    
+          const closeButton3 = document.getElementById("close-button3");
+          const modal3 = document.getElementById("third-modal");
+    
+          const closeButton4 = document.getElementById("close-button4");
+          const modal4 = document.getElementById("fourth-modal");
+    
+          const closeButton5 = document.getElementById("close-button5");
+          const modal5 = document.getElementById("fifth-modal");
+    
+          const closeButton6 = document.getElementById("close-button6");
+          const modal6 = document.getElementById("sixth-modal");
+    
+          const closeButton7 = document.getElementById("close-button7");
+          const modal7 = document.getElementById("seventh-modal");
+    
+          const closeButton8 = document.getElementById("close-button8");
+          const modal8 = document.getElementById("eigth-modal");
+    
+          const closeButton9 = document.getElementById("close-button9");
+          const modal9 = document.getElementById("nineth-modal");
+    
+    
+          // Add an event listener to the close button to close the modal when clicked
+          closeButton.addEventListener("click", function() {
+            // Use Bootstrap's modal method to close the modal
+            $(modal).modal("hide");
+          });
+    
+          closeButton2.addEventListener("click", function() {
+            // Use Bootstrap's modal method to close the modal
+            $(modal2).modal("hide");
+          });
+    
+          closeButton3.addEventListener("click", function() {
+            // Use Bootstrap's modal method to close the modal
+            $(modal3).modal("hide");
+          });
+    
+          closeButton4.addEventListener("click", function() {
+            // Use Bootstrap's modal method to close the modal
+            $(modal4).modal("hide");
+          });
+    
+          closeButton5.addEventListener("click", function() {
+            // Use Bootstrap's modal method to close the modal
+            $(modal5).modal("hide");
+          });
+    
+          closeButton6.addEventListener("click", function() {
+            // Use Bootstrap's modal method to close the modal
+            $(modal6).modal("hide");
+          });
+    
+          closeButton7.addEventListener("click", function() {
+            // Use Bootstrap's modal method to close the modal
+            $(modal7).modal("hide");
+          });
+    
+          closeButton8.addEventListener("click", function() {
+            // Use Bootstrap's modal method to close the modal
+            $(modal8).modal("hide");
+          });
+    
+          closeButton9.addEventListener("click", function() {
+            // Use Bootstrap's modal method to close the modal
+            $(modal9).modal("hide");
+          });
+        </script>
 
     <!-- Photo Upload -->
     <script>
