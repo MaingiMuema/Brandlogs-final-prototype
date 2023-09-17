@@ -119,27 +119,25 @@
       <div id="content">
         <!-- User Profile -->
         <div class="container py-4 pe-md-5 me-md-5">
-          <div class="d-flex mb-3 justify-content-between px-md-5">
+          <div class="d-flex mb-3 justify-content-between col-md-9 px-md-5">
             <a
               href="#"
               class="text-black profile-link"
             >
               <div class="d-flex align-items-center">
-                <img src="../Assets/images/school logo.png" class="w-25 h-25" alt="" />
-                <h3 class="fw-bold ms-2 fs-6">Brandname</h3>
+                <img src="../Assets/images/child1.jpg" class="w-25 h-25 rounded-circle" alt="" />
+                <h5 class="mb-4 mt-3 ms-3">Rita Johnson</h5>
               </div>
             </a>
-            <div class="">
-                <a href="#" class="connect-btn py-2" data-toggle="modal" data-target="#first-modal">
-                    <button class="btn font-weight-bold px-4 ">
-                      Connect
-                    </button>
-                  </a>
-            </div>
+            <a href="#" class="" >
+              <button class="connect-btn px-4 py-1" data-toggle="modal" data-target="#first-modal" >
+                Connect
+              </button>
+            </a>
           </div>
-          <div class="">
+          <div class="col-md-9">
             <ul
-              class="d-flex list-group list-group-horizontal  px-md-5"
+              class="d-flex justify-between justify-content-md-center list-group list-group-horizontal  px-md-5"
             >
               <li class="list-group-item border-0">
                 <small>
@@ -169,22 +167,22 @@
             >
               <li class="list-group-item border-0 border-success">
                 <a
-                  href="./brandBio.html"
-                  class="profile-link text-black border-bottom  border-success"
+                  href="../Bio/bio.html"
+                  class="profile-link text-black"
                   >Bio</a
                 >
               </li>
               <li class="list-group-item border-0">
                 <a
-                  class="profile-link text-black"
-                  href="./brandLogStories.html"
+                  class="profile-link border-bottom border-success text-black"
+                  href="../LogStories/logstories.html"
                   >Log Stories</a
                 >
               </li>
               <li class="list-group-item border-0">
                 <a
                   class="profile-link text-black p"
-                  href="./brandConnects.html"
+                  href="../Connects/UserConnects.html"
                   >Connects</a
                 >
               </li>
@@ -192,10 +190,113 @@
           </div>
           
         </div>  
-        <hr class="log-stories-hr" style="margin-top: -20px;"/>    
-        <div class="dash-cards">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <hr class="log-stories-hr" style="margin-top: -20px;"/>   
+        <!-- Log Story Card Container -->
+        <div class="col-12 pt-3 col-md-8 px-2 px-md-5 mb-2" id="log-story-container" >
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <a
+              href="../LogStories/logstories.html"
+              class="text-decoration-none"
+            >
+            <div class="d-flex align-items-center">
+              <div class="rounded-circle" style="overflow: hidden; width: 40px; height: 40px;">
+                  <img src="../Assets/images/child1.jpg" width="40px" alt="" style="width: 100%; height: 100%; object-fit: cover;" />
+              </div>
+              <h3 class="font-weight-bold ms-1 fw-bold fs-6" style="color: black">
+                  Rita Johnson
+              </h3>
+          </div>
+            </a>
+            <a
+              href="#"
+              class="connect-btn"
+              data-toggle="modal"
+              data-target="#first-modal"
+            >
+              
+            </a>
+          </div>
+          <div class="d-flex flex-column flex-md-row">
+            <div
+              style="background-color: #3783b4; border-radius: 10px 10px 10px 10px;"
+              class="shadow flex w-100 md:max-w-500px flex-column"
+              id="log-card"
+            >
+              <div
+                class="tony-cad text-white d-flex flex-column align-items-center p-4 "
+              >
+                <h2 class="font-weight-bold h2 fw-bold">Celebrating</h2>
+                <img
+                  src="../Assets/images/tony.jpg"
+                  class="rounded-circle w-25 w-md-50"
+                  alt=""
+                />
+                <h2 class="font-weight-bold fs-6 fw-bold">Tonny Robbins</h2>
+                <h2 class="h3 text-center">My Hunger Hero</h2>
+                <h2 class="font-weight-bold fs-6 fw-bold">
+                  for impacting our lives
+                </h2>
+              </div>
+              <div class="container-fluid d-flex flex-column bg-white" style="border-radius: 0px 0px 10px 10px;">
+                <div class="row" style="border-radius: 0px 0px 10px 10px;">
+                    <p class="log-story-content">
+                        <strong class="font-weight-bold">My Birthday Log Story:</strong>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+                <!-- <div class="row">
+                    <div style="background-color: #DB2127; border-radius: 0 0 10px 10px;" class="d-flex justify-content-center align-items-center gap-4 py-4 align-items-center gift-icon">
+                        <div class="">
+                            <img src="../Assets/images/gift.png" width="" class="" alt="" />
+                        </div>
+                        <div>
+                          <h2 class="text-white h2 fs-2 fw-bold">$300</h2>
+                        </div>
+                    </div>
+                </div> -->
+              </div>            
+            </div>
+            <div
+              class="social d-flex flex-row flex-md-column p-md-1 col-12 px-4 px-md-5 col-md-2 pt-md-5 pt-3 justify-content-between align-items-center justify-content-md-center"
+            >
+              <a href="#" class="text-decoration-none" data-toggle="modal" data-target="#first-modal">
+                <div
+                  class="d-flex text-black flex-column justify-content-center align-items-center"
+                >
+                  <img src="../Assets/images/like.png" width="24px" alt="" />
+                  <p class="text-sm text-nowrap" style="color: black;"><small>1000K Logs</small></p>
+                </div>
+              </a>
+              <a href="#" class="text-decoration-none" data-toggle="modal" data-target="#first-modal">
+                <div
+                  class="d-flex text-black flex-column justify-content-center align-items-center"
+                >
+                  <img src="../Assets/images/comment.png" width="24px" alt="" />
+                  <p class="text-sm fs-6 text-nowrap" style="color: black;"><small>10.1K Chats</small></p>
+                </div>
+              </a>
+              <a href="#" class="text-decoration-none" data-toggle="modal" data-target="#first-modal">
+                <div class="d-flex text-black flex-column align-items-center">
+                  <img src="../Assets/images/share.png" width="24px" alt="" />
+                  <p class="text-sm fs-6 text-nowrap" style="color: black;"><small>30 Share</small></p>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
+        <br/>
+        <br/>
+        <hr class="log-stories-hr"/>
+        <!-- End Log Story Card Container-->
+        <!-- ONE AND ONLY -->
+
+        <!-- Log Story Card Container -->
+        
+        <!-- End Log Story Card Container-->
+
+        <!-- Log Story Card Container -->
+        <!--  -->
+                <!-- End Log Story Card Container-->
       </div>
 
         <!-- Modals -->
@@ -727,54 +828,26 @@
             <div class="footer-links ">
               
               <div>
-                <a
-                  href="../LandingPage/landingPage.html#About"
-                  class="text-decoration-none"
-                  >About Us</a
-                >
+                <a href="../LandingPage/landingPage.html" class="text-decoration-none   ">About Us</a>
               </div>
               <div>
-                <a
-                  href="../LandingPage/landingPage.html#Benefits"
-                  class="text-decoration-none"
-                  >Benefits</a
-                >
+                <a href="../LandingPage/landingPage.html" class="text-decoration-none ">Benefits</a>
               </div>
               <div>
-                <a
-                  href="../LandingPage/landingPage.html#OurStories"
-                  class="text-decoration-none"
-                  >Our Stories</a
-                >
+                <a href="../LandingPage/landingPage.html" class="text-decoration-none  ">Our Stories</a>
               </div>
               <div>
-                <a
-                  href="../LandingPage/landingPage.html#FAQs"
-                  class="text-decoration-none"
-                  >FAQs</a
-                >
+                  <a href="../LandingPage/landingPage.html" class="text-decoration-none ">FAQs</a>
               </div>
               <div>
-                <a
-                  href="../PrivacyPolicy/privacyPolicy.html"
-                  class="text-decoration-none text-white"
-                  >Privacy Policy</a
-                >
+                  <a href="../PrivacyPolicy/privacyPolicy.html" class="text-decoration-none  ">Privacy Policy</a>
               </div>
               <div>
-                <a
-                  href="../TermsAndConditions/termsAndConditions.html"
-                  class="text-decoration-none text-white"
-                  >Terms &amp; Conditions</a
-                >
+                  <a href="../TermsAndConditions/termsAndConditions.html " class="text-decoration-none ">Terms &amp; Conditions</a>
               </div>
               <div>
-                <a
-                  href="./AdminOptions.html"
-                  class="text-decoration-none text-white"
-                  >Admin Login</a
-                >
-              </div>
+                <a href="../BrandlogsForms/adminLogin.html" class="text-decoration-none "><b>Admin Login</b></a>
+            </div>
               <br/>
               <div>
                 <a href="../ContactForm/contact.html" class="text-decoration-none ">Contact Us</a>
@@ -796,19 +869,19 @@
     <!-- Scripts-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.4/js/utils.js"></script>
 
+    <script>
+            
+      function navigateProfile(){
+  window.location.href = "../Logstories/logstories.html"
+}
+</script>
+
     <!-- Navigate to Checkout -->
     <script>
       function navigateCheckOut(){
         window.location.href = "../Checkout/checkout.html"
       }
     </script>
-
-<script>
-            
-  function navigateProfile(){
-window.location.href = "../Logstories/logstories.html"
-}
-</script>
 
     <!-- Photo Upload -->
     <script>

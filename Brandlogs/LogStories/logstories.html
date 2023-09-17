@@ -19,37 +19,64 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.4/js/utils.js"></script>
     <link rel="icon" href="/assets/images/Brandlogs Inc Logo NEW LOGO 14.08 1.png" type="image/x-icon">
     <link rel="shortcut icon" href="/assets/images/Brandlogs Inc Logo NEW LOGO 14.08 1.png" type="image/x-icon">
-    
+    <link rel="stylesheet" href="../Connects/card.css">
+    <link rel="stylesheet" href="./login.css" />
     <title>Brandlogs</title>
 </head>
 <body>
-    <header style="position: fixed; width: 100%; z-index: 2;">
-        <nav class="navbar navbar-expand-lg navbar-light border-bottom-0 nav-bottom-line">
-            <div class="container-fluid px-md-5">
-              <a class="navbar-brand" href="../LandingPage/landingPage.html"><img src="../Assets/images/Brandlogs Inc Logo NEW LOGO 14.08 1.png" style="width: 64px; height: 64px;" alt="Logo"/></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarScroll">
-                <form style="width: 100%;" class="d-md-flex justify-content-md-center">
-                    <div class="form-group has-search  ">
-                        <span class="fa fa-search form-control-feedback"></span>
-                        <input type="text" class="form-control nav-search-bar" id="account-search" placeholder="Search by account name...">
-                    </div>
-                    <div id="suggestion-list"></div>
-                </form>
-                <div class="d-flex flex-column align-items-center"> 
-                  <p>To Get $250 Bonus</p>
-                  <button class="cta fw-bold" data-toggle="modal" data-target="#first-modal">Accept invitation</button>
-                  
-                
-                </div>
-
-              </div>
+  <header style="position: fixed; width: 100%; z-index: 2">
+    <nav
+      class="navbar navbar-expand-lg navbar-light border-bottom-0 nav-bottom-line"
+    >
+      <div class="container-fluid px-md-5">
+        <a class="navbar-brand" href="../LandingPage/landingPage.html"
+          ><img
+            src="../Assets/images/Brandlogs Inc Logo NEW LOGO 14.08 1.png"
+            style="width: 64px; height: 64px"
+            alt="Logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <form
+            style="width: 100%"
+            class="d-md-flex justify-content-md-center"
+          >
+            <div class="form-group has-search">
+              <span class="fa fa-search form-control-feedback"></span>
+              <input
+                type="text"
+                class="form-control nav-search-bar"
+                id="account-search"
+                placeholder="Search by account name..."
+              />
             </div>
-          </nav>
-          <hr style="width: 100%; margin-top: -1px;"/>
-    </header>
+            <div id="suggestion-list"></div>
+          </form>
+          <div class="d-flex flex-column align-items-center">
+            <p class="small" style="margin-bottom: -2px;">To Get $250 Hero Bonus</p>
+            <button
+              class="cta fw-bold"
+              data-toggle="modal"
+              data-target="#first-modal"
+            >
+              Accept invitation
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <hr style="width: 100%; margin-top: -1px" />
+  </header>
     <main style="padding: 106px 0px;">
       <div class="wrapper">
         <!-- Sidebar Holder -->
@@ -102,8 +129,8 @@
                 <h3 class="fw-bold ms-2 fs-6">Tony Robbins</h3>
               </div>
             </a>
-            <a href="#" class="connect-bt " >
-              <button class="connect-btn" data-toggle="modal" data-target="#first-modal">
+            <a href="#" class="" >
+              <button class="connect-btn px-4 py-1" data-toggle="modal" data-target="#first-modal" >
                 Connect
               </button>
             </a>
@@ -155,7 +182,7 @@
               <li class="list-group-item border-0">
                 <a
                   class="profile-link text-black p"
-                  href="../Connects/connects.html"
+                  href="../Connects/TonyConnects.html"
                   >Connects</a
                 >
               </li>
@@ -164,361 +191,616 @@
           
         </div>  
         <hr class="log-stories-hr" style="margin-top: -20px;"/>   
-          <!-- Log Story Card Container -->
-          <div class="col-12 pt-3 col-md-8 px-2 px-md-5 mb-2" id="log-story-container">
-            <div class="d-flex justify-content-between align-items-center mb-4">
-              <a
-                href="../LogStories/logstories.html"
-                class="text-decoration-none"
-              >
-                <div class="d-flex align-items-center">
-                  <img src="../Assets/images/user.png" width="40px" alt="" />
-                  <h3 class="font-weight-bold ms-1 fw-bold fs-6" style="color: black;">Msoo Heavens</h3>
+        <!-- Log Story Card Container -->
+        <!-- Only One -->
+
+
+        <!-- Log Story Card Container -->
+        <div class="col-12 pt-3 col-md-8 px-2 px-md-5 mb-2" id="log-story-container" >
+          <div class="d-flex justify-content-between align-items-center mb-4" >
+            <a
+              href="../LogStories/logstories.html"
+              class="text-decoration-none"
+            >
+              <div class="d-flex align-items-center">
+                <div class="rounded-circle" style="overflow: hidden; width: 40px; height: 40px;">
+                  <img src="../Assets/images/tony.jpg" width="40px" alt="" style="width: 100%; height: 100%; object-fit: cover;" />
                 </div>
-              </a>
-              <a href="#"  data-toggle="modal" data-target="#first-modal">
-                <button class="connect-btn">
-                  Connect
-                </button>
-              </a>
-            </div>
-            <div class="d-flex flex-column flex-md-row">
+                <h3 class="font-weight-bold ms-1 fw-bold fs-6" style="color: black;">Tony Robbins</h3>
+              </div>
+            </a>
+            
+          </div>
+          <div class="d-flex flex-column flex-md-row">
+            <div
+              style="background-color: #3783b4; border-radius: 10px 10px 10px 10px;"
+              class="shadow flex w-100 md:max-w-500px flex-column"
+              id="log-card"
+            >
               <div
-                style="background-color: #3783b4"
-                class="shadow flex w-100 md:max-w-500px flex-column"
-                id="log-card"
+                class="tony-cad text-white d-flex flex-column align-items-center p-4 "
               >
-                <div
-                  class="tony-cad text-white d-flex flex-column align-items-center p-4"
-                >
-                  <h2 class="font-weight-bold h2 fw-bold">Celebrating</h2>
-                  <img
-                    src="../Assets/images/tony.jpg"
-                    class="rounded-circle w-25 w-md-50"
-                    alt=""
-                  />
-                  <h2 class="font-weight-bold fs-6 fw-bold">Tonny Robbins</h2>
-                  <h2 class="h3 text-center">My Hunger Hero</h2>
-                  <h2 class="font-weight-bold fs-6 fw-bold">
-                    for impacting our lives
-                  </h2>
-                </div>
-                <div
-                  class="d-flex align-items-end justify-content-between bg-white" style="border-radius: 0px 0px 10px 10px;"
-                >
-                    <div class="col-4 col-md-4 d-none d-md-block">
-                      <div
-                      style="border-radius: 0px 0px 0px 10px; background-color: #DB2127;"
-                      class="d-none d-md-flex flex-column justify-content-center py-4 px-5 align-items-center"
-                    >
-                      <img
-                        src="../Assets/images/gift.png"
-                        width=""
-                        class="col-8"
-                        alt=""
-                      />
-                      <h2 class="text-white h2 fs-4 fw-bold">$300</h2>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-8">
-                    <p class="p-2 log-story-content">
-                      <strong class="font-weight-bold"
-                        >My Birthday Log Story:</strong
-                      >
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Asperiores facere praesentium veritatis in laborum ex. Ipsum
-                      simili.
+                <h2 class="font-weight-bold h2 fw-bold">Celebrating</h2>
+                <img
+                  src="../Assets/images/tony.jpg"
+                  class="rounded-circle w-25 w-md-50"
+                  alt=""
+                />
+                <h2 class="font-weight-bold fs-6 fw-bold">Tonny Robbins</h2>
+                <h2 class="h3 text-center">My Hunger Hero</h2>
+                <h2 class="font-weight-bold fs-6 fw-bold">
+                  for impacting our lives
+                </h2>
+              </div>
+              <div class="container-fluid d-flex flex-column bg-white" style="border-radius: 0px 0px 10px 10px;">
+                <div class="row" style="border-radius: 0px 0px 10px 10px;">
+                    <p class="log-story-content">
+                        <strong class="font-weight-bold">My Birthday Log Story:</strong>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </p>
-                  </div>
                 </div>
-              </div>
-              <div
-                class="social d-flex flex-row flex-md-column p-md-1 col-12 px-4 px-md-5 col-md-2 pt-md-5 pt-3 justify-content-between align-items-center justify-content-md-center"
-              >
-                <a href="#" class="text-decoration-none">
-                  <div
-                    class="d-flex text-black flex-column justify-content-center align-items-center"
-                  >
-                    <img src="../Assets/images/like.png" width="24px" alt="" />
-                    <p class="text-sm" style="color: black;"><small>20K<br/> Logs</small></p>
-                  </div>
-                </a>
-                <a href="#" class="text-decoration-none">
-                  <div
-                    class="d-flex text-black flex-column justify-content-center align-items-center"
-                  >
-                    <img src="../Assets/images/comment.png" width="24px" alt="" />
-                    <p class="text-sm fs-6" style="color: black;"><small>10.1K <br/>Chats</small></p>
-                  </div>
-                </a>
-                <a href="#" class="text-decoration-none">
-                  <div class="d-flex text-black flex-column align-items-center">
-                    <img src="../Assets/images/share.png" width="24px" alt="" />
-                    <p class="text-sm fs-6" style="color: black;"><small>30<br/> Share</small></p>
-                  </div>
-                </a>
-              </div>
+                <!-- <div class="row">
+                    <div style="background-color: #DB2127; border-radius: 0 0 10px 10px;" class="d-flex justify-content-center align-items-center gap-4 py-4 align-items-center gift-icon">
+                        <div class="">
+                            <img src="../Assets/images/gift.png" width="" class="" alt="" />
+                        </div>
+                        <div>
+                          <h2 class="text-white h2 fs-2 fw-bold">$300</h2>
+                        </div>
+                    </div>
+                </div> -->
+              </div>            
+            </div>
+            <div
+              class="social d-flex flex-row flex-md-column p-md-1 col-12 px-4 px-md-5 col-md-2 pt-md-5 pt-3 justify-content-between align-items-center justify-content-md-center"
+            >
+              <a href="#" class="text-decoration-none" data-toggle="modal" data-target="#first-modal">
+                <div
+                  class="d-flex text-black flex-column justify-content-center align-items-center"
+                >
+                  <img src="../Assets/images/like.png" width="24px" alt="" />
+                  <p class="text-sm text-nowrap" style="color: black;"><small>1000K Logs</small></p>
+                </div>
+              </a>
+              <a href="#" class="text-decoration-none" data-toggle="modal" data-target="#first-modal">
+                <div
+                  class="d-flex text-black flex-column justify-content-center align-items-center"
+                >
+                  <img src="../Assets/images/comment.png" width="24px" alt="" />
+                  <p class="text-sm fs-6 text-nowrap" style="color: black;"><small>10.1K Chats</small></p>
+                </div>
+              </a>
+              <a href="#" class="text-decoration-none" data-toggle="modal" data-target="#first-modal">
+                <div class="d-flex text-black flex-column align-items-center">
+                  <img src="../Assets/images/share.png" width="24px" alt="" />
+                  <p class="text-sm fs-6 text-nowrap" style="color: black;"><small>30 Share</small></p>
+                </div>
+              </a>
             </div>
           </div>
-          <br/>
-          <br/>
-          <hr class="log-stories-hr"/>
-          <!-- End Log Story Card Container--> 
-          <!-- Log Story Card Container -->
-          <div class="col-12 pt-3 col-md-8 px-2 px-md-5 mb-2" id="log-story-container">
-            <div class="d-flex justify-content-between align-items-center mb-4">
-              <a
-                href="../LogStories/logstories.html"
-                class="text-decoration-none"
-              >
-                <div class="d-flex align-items-center">
-                  <img src="../Assets/images/user.png" width="40px" alt="" />
-                  <h3 class="font-weight-bold ms-1 fw-bold fs-6" style="color: black;">Msoo Heavens</h3>
-                </div>
-              </a>
-              <a href="#" data-toggle="modal" data-target="#first-modal">
-                <button class="connect-btn">
-                  Connect
-                </button>
-              </a>
-            </div>
-            <div class="d-flex flex-column flex-md-row">
-              <div
-                style="background-color: #3783b4"
-                class="shadow flex w-100 md:max-w-500px flex-column"
-                id="log-card"
-              >
-                <div
-                  class="tony-cad text-white d-flex flex-column align-items-center p-4"
-                >
-                  <h2 class="font-weight-bold h2 fw-bold">Celebrating</h2>
-                  <img
-                    src="../Assets/images/tony.jpg"
-                    class="rounded-circle w-25 w-md-50"
-                    alt=""
-                  />
-                  <h2 class="font-weight-bold fs-6 fw-bold">Tonny Robbins</h2>
-                  <h2 class="h3 text-center">My Hunger Hero</h2>
-                  <h2 class="font-weight-bold fs-6 fw-bold">
-                    for impacting our lives
-                  </h2>
-                </div>
-                <div
-                  class="d-flex align-items-end justify-content-between bg-white" style="border-radius: 0px 0px 10px 10px;"
-                >
-                    <div class="col-4 col-md-4 d-none d-md-block">
-                      <div
-                      style="border-radius: 0px 0px 0px 10px; background-color: #DB2127;"
-                      class="d-none d-md-flex flex-column justify-content-center py-4 px-5 align-items-center"
-                    >
-                      <img
-                        src="../Assets/images/gift.png"
-                        width=""
-                        class="col-8"
-                        alt=""
-                      />
-                      <h2 class="text-white h2 fs-4 fw-bold">$300</h2>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-8">
-                    <p class="p-2 log-story-content">
-                      <strong class="font-weight-bold"
-                        >My Birthday Log Story:</strong
-                      >
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Asperiores facere praesentium veritatis in laborum ex. Ipsum
-                      simili.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="social d-flex flex-row flex-md-column p-md-1 col-12 px-4 px-md-5 col-md-2 pt-md-5 pt-3 justify-content-between align-items-center justify-content-md-center"
-              >
-                <a href="#" class="text-decoration-none">
-                  <div
-                    class="d-flex text-black flex-column justify-content-center align-items-center"
-                  >
-                    <img src="../Assets/images/like.png" width="24px" alt="" />
-                    <p class="text-sm" style="color: black;"><small>20K<br/> Logs</small></p>
-                  </div>
-                </a>
-                <a href="#" class="text-decoration-none">
-                  <div
-                    class="d-flex text-black flex-column justify-content-center align-items-center"
-                  >
-                    <img src="../Assets/images/comment.png" width="24px" alt="" />
-                    <p class="text-sm fs-6" style="color: black;"><small>10.1K <br/>Chats</small></p>
-                  </div>
-                </a>
-                <a href="#" class="text-decoration-none">
-                  <div class="d-flex text-black flex-column align-items-center">
-                    <img src="../Assets/images/share.png" width="24px" alt="" />
-                    <p class="text-sm fs-6" style="color: black;"><small>30<br/> Share</small></p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <br/>
-          <br/>
-          <hr class="log-stories-hr"/>
-          <!-- End Log Story Card Container-->   
+        </div>
+        <br/>
+        <br/>
+        <hr class="log-stories-hr"/>
+        <!-- End Log Story Card Container-->
+        <!-- ONE AND ONLY -->
+
+        <!-- Log Story Card Container -->
+        
       </div>
 
-      <div class="container text-center">
-            
-        <!-- First Modal -->
-        <div class="modal fade" id="first-modal" data-backdrop="static" data-keyboard="false">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="d-flex justify-content-end">
-                <button type="button" style="border: none; background-color: #DB2127; border-radius: 2px; color: white;" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              </div>
-              <div class="modal-body">
-                <div class="d-flex justify-content-center">
-                  <img class="img-fluid" src="../Assets/images/tony.jpg" alt="Tony Robbins"/>
-                </div>
-                <br/>
-                <div class="card-content">
-                    <h3 class="text-center" style="margin-top: -12px;"><b>Tonny Robbins</b></h3>
-                    <br/>
-                    <p class="text-center" style="font-size: 18px;">Tonny Robbins has gifted you $50</p>
-                    <p class="text-center" style="font-size: 18px;">Fullfil a 2-way gift pledge to redeem</p>
-                </div>
-                <div class="d-flex justify-content-center">
-                    <button class="modal-cta next-modal" data-dismiss="modal" data-target="#second-modal">Accept</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      
-        <!-- Second Modal -->
-        <div class="modal" id="second-modal" data-backdrop="static" data-keyboard="false">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-body">
-                <h4>Verify Phone Number</h4>
-                <br/>
-                <input type="tel" id="phone" class="form-control">
-              </div>
-              <br/>
-              <div class="d-flex justify-content-center">
-                <button class="modal-cta next-modal" data-dismiss="modal" data-target="#third-modal">Submit</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      
-        <!-- Third Modal -->
-        <div class="modal" id="third-modal" data-backdrop="static" data-keyboard="false">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content" id="modal-content">
-              <div class="modal-body">
-                <div class="row justify-content-center">
-                  <div class="col-12 col-md-6 col-lg-4" style="min-width: 500px;">
-                    <div class="card bg-white mb-5 mt-5 border-0" style="box-shadow: 0 12px 15px rgba(0, 0, 0, 0.02);">
-                      <div class="card-body p-5 text-center">
-                        <h4>Verify</h4>
-                        <p>Your code was sent to you via phone</p>
-            
-                        <div class="otp-field mb-4">
-                          <input type="number" />
-                          <input type="number" disabled />
-                          <input type="number" disabled />
-                          <input type="number" disabled />
-                          <input type="number" disabled />
-                          <input type="number" disabled />
-                        </div>              
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="d-flex justify-content-center" style="margin-top: -70px; position: relative; z-index: 2;">
-                <button class="modal-cta next-modal" data-dismiss="modal" data-target="#fourth-modal">Submit</button>
-              </div>
-              <p class="resend text-muted mb-0">
-                Didn't receive code? <a href="">Request again</a>
-              </p>
-              <br/>
-            </div>
-          </div>
-        </div>
-      
-        <!-- Fourth Modal -->
-        <div class="modal" id="fourth-modal" data-backdrop="static" data-keyboard="false">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-body">
-                <h4>Profile</h4>
-                <br/>
-                <div class="container">
-                  <div class="row">
+        <!-- Modals -->
+        <div class="container text-center">
+          <!-- First Modal -->
+
+          <div
+            class="modal"
+            id="first-modal"
+            data-backdrop="static"
+            data-keyboard="false"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <br />
+                  <div class="container">
+                    <div class="row">
                       <div class="">
-                        <div class="d-flex justify-content-center">
-                          <div class="profile-pic">            
-                            <img alt="User Pic" src="https://d30y9cdsu7xlg0.cloudfront.net/png/138926-200.png" id="profile-image1" height="200">
-                            <input id="profile-image-upload" class="hidden" hidden type="file" onchange="previewFile()" >
-                            <div style="color:#999;" >  </div>                                  
+                        <div class="user-detail p-5">
+                          <form>
+                            <p class="text-start text-capitalize fs-6">
+                              Kindly input your invitation code below
+                            </p>
+                            <div class="form-group">
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="name"
+                                placeholder="Enter your invitation code"
+                                name="name"
+                              />
+                            </div>
+                          </form>
+                          <div class="d-flex justify-content-center mt-3">
+                            <button
+                              class="modal-cta next-modal w-100"
+                              data-dismiss="modal"
+                              data-target="#second-modal"
+                            >
+                              Confirm
+                            </button>
                           </div>
-                        </div>
-                        
-                        <div class="user-detail">
-                          <p class="text-start">Name</p>
-                          <div class="form-group">  
-                            <input type="text" class="form-control" id="name" placeholder="Enter your Name" name="name">
-                          </div>
-                          <br/>
-                          <p class="text-start">Bio</p>
-                          <div class="form-group">  
-                            <textarea type="text" class="form-control" id="bio" placeholder="Input your Bio" name="bio"></textarea>
-                          </div>                                                          
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="d-flex justify-content-center my-1" style="margin-top: -70px; position: relative; z-index: 2;">
-                  <button class="modal-cta next-modal" data-dismiss="modal" data-target="#fifth-modal">Create Profile</button>
-                </div>
-            </div>
-          </div>
-        </div>
-      
-        <!-- Fifth Modal -->
-        <div class="modal" id="fifth-modal" data-backdrop="static" data-keyboard="false">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-body">
-                <h1>Congratulations!</h1>
-                <br/>
-                <p>
-                  Your Profile has been created successfully. We have
-                  awarded you $250 bonus.
-                </p>
-                <br/>
-                <div class="d-flex justify-content-center">
-                  <input type="checkbox" class="" name="accept" />
-                  <span>&nbsp;&nbsp; I have read and accepted <a href="../TermsAndConditions/termsAndConditions.html">terms of use</a></span>
-                </div>
-              </div>
-              <div class="d-flex justify-content-center my-1" style="margin-top: -70px; position: relative; z-index: 2;">
-                <button class="modal-cta next-modal" data-dismiss="modal" onclick="navigateCheckOut()">Complete</button>
               </div>
             </div>
           </div>
+
+          <!-- Second Modal -->
+
+          <div
+            class="modal fade"
+            id="second-modal"
+            data-backdrop="static"
+            data-keyboard="false"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content d-flex">
+                <div class="modal-body">
+                  <div class="d-flex justify-content-center">
+                    <img
+                      class="img-fluid"
+                      src="../Assets/images/tony.jpg"
+                      alt="Tony Robbins"
+                    />
+                  </div>
+                  <br />
+                  <div class="card-content">
+                    <h3 class="text-center" style="margin-top: -12px">
+                      <b>Tonny Robbins</b>
+                    </h3>
+                    <br />
+                    <p class="text-center" style="font-size: 18px">
+                      Tonny Robbins has gifted you $50
+                    </p>
+                    <p class="text-center" style="font-size: 18px">
+                      Fullfil a 2-way gift pledge to redeem
+                    </p>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <button
+                      class="modal-cta next-modal"
+                      data-dismiss="modal"
+                      data-target="#third-modal"
+                    >
+                      Get started
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Third Modal -->
+          <div
+            class="modal"
+            id="third-modal"
+            data-backdrop="static"
+            data-keyboard="false"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content" style="padding-top: 30%">
+                <div class="modal-body">
+                  <h4>Verify Phone Number</h4>
+                  <br />
+                  <div style="width: 100%">
+                    <input type="tel" id="phone" class="form-control" />
+                  </div>
+                  <br />
+                  <div class="d-flex justify-content-center">
+                    <button
+                      class="modal-cta next-modal"
+                      data-dismiss="modal"
+                      data-target="#fourth-modal"
+                    >
+                      Submit
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fourth Modal -->
+          <div
+            class="modal"
+            id="fourth-modal"
+            data-backdrop="static"
+            data-keyboard="false"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content" id="modal-content">
+                <div class="modal-body">
+                  <div class="row justify-content-center">
+                    <div
+                      class="col-12 col-md-6 col-lg-4"
+                      style="min-width: 500px"
+                    >
+                      <div
+                        class="card bg-white mb-5 mt-5 border-0"
+                        style="box-shadow: 0 12px 15px rgba(0, 0, 0, 0.02)"
+                      >
+                        <div class="card-body p-5 text-center">
+                          <h4>Verify</h4>
+                          <p>Your code was sent to you via phone</p>
+
+                          <div class="otp-field mb-4">
+                            <input type="number" />
+                            <input type="number" disabled />
+                            <input type="number" disabled />
+                            <input type="number" disabled />
+                            <input type="number" disabled />
+                            <input type="number" disabled />
+                          </div>
+                        </div>
+                        <div
+                          class="d-flex justify-content-center"
+                          style="
+                            margin-top: -70px;
+                            position: relative;
+                            z-index: 2;
+                          "
+                        >
+                          <button
+                            class="modal-cta next-modal"
+                            data-dismiss="modal"
+                            data-target="#fifth-modal"
+                          >
+                            Submit
+                          </button>
+                        </div>
+                        <p class="resend text-muted mb-0">
+                          Didn't receive code? <a href="">Request again</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <br />
+              </div>
+            </div>
+          </div>
+
+          <!-- Fifth Modal -->
+          <div
+            class="modal"
+            id="fifth-modal"
+            data-backdrop="static"
+            data-keyboard="false"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <h4>When is your Birthday?</h4>
+                  <br />
+                  <div class="container">
+                    <div class="row">
+                      <div class="p-2">
+                        <p></p>
+                        <form class="container">
+                          <select
+                            class="dob-input"
+                            id="year"
+                            name="yyyy"
+                            onchange="change_year(this)"
+                          ></select>
+                          <select
+                            class="dob-input"
+                            id="month"
+                            name="mm"
+                            onchange="change_month(this)"
+                          ></select>
+                          <select class="dob-input" id="day" name="dd"></select>
+                          <br />
+                          <br />
+                        </form>
+                        <div class="user-detail">
+                          <p class="text-start text-capitalize fs-6">
+                            Enter Username
+                          </p>
+                          <div class="form-group">
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="name"
+                              placeholder="Username"
+                              name="name"
+                            />
+                          </div>
+                          <br />
+                        </div>
+
+                        <div
+                          class="d-flex justify-content-center"
+                          style="position: relative; z-index: 2"
+                        >
+                          <button
+                            class="modal-cta next-modal"
+                            data-dismiss="modal"
+                            data-target="#sixth-modal"
+                          >
+                            Create Profile
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sixth Modal -->
+          <div
+            class="modal"
+            id="sixth-modal"
+            data-backdrop="static"
+            data-keyboard="false"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content" style="padding-top: 150px">
+                <div class="modal-body">
+                  <h4>Profile Photo</h4>
+                  <br />
+                  <!-- Image upload -->
+                  <div
+                    class="circle position-relative display-2 d-flex align-items-center justify-content-center mb-3"
+                  >
+                    <div class="profile-pic">
+                      <img
+                        alt="User Pic"
+                        src="https://d30y9cdsu7xlg0.cloudfront.net/png/138926-200.png"
+                        id="profile-image1"
+                        height="200"
+                      />
+                      <div style="color: #999"></div>
+                    </div>
+                  </div>
+
+                  <input type="file" id="customFile" name="file" hidden="" />
+                  <label
+                    style="background-color: #db2127; color: #fff"
+                    class="btn btn-success-soft btn-block"
+                    for="customFile"
+                    >Upload</label
+                  >
+                  <button
+                    type="button"
+                    class="btn btn-secondary next-modal"
+                    data-dismiss="modal"
+                    data-target="#seventh-modal"
+                  >
+                    Skip
+                  </button>
+                </div>
+                <div
+                  class="d-flex justify-content-center my-1"
+                  style="
+                    margin-top: -70px;
+                    position: relative;
+                    z-index: 2;
+                    padding: 20px;
+                  "
+                >
+                  <button
+                    class="modal-cta next-modal"
+                    data-dismiss="modal"
+                    data-target="#seventh-modal"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- seventh modal -->
+
+          <div
+            class="modal fade"
+            id="seventh-modal"
+            data-backdrop="static"
+            data-keyboard="false"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content d-flex">
+                <div class="modal-body">
+                  <h4>Congratulations!</h4>
+                  <br />
+                  <div class="card-content">
+                    <p class="text-center" style="font-size: 18px">
+                      Your profile has been created successfully. We have
+                      awarded you $250 bonus reward.
+                    </p>
+                    <div class="d-flex justify-content-center gap-2 form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                      />
+                      <label class="form-check-label" for="flexCheckDefault">
+                        I have read and accepted
+                        <a href="../TermsAndConditions/termsAndConditions.html"
+                          >terms of use</a
+                        >
+                      </label>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <button
+                      class="modal-cta next-modal"
+                      data-dismiss="modal"
+                      data-target="#eigth-modal"
+                    >
+                      Complete
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- eigth Modal -->
+          <div
+            class="modal"
+            id="eigth-modal"
+            data-backdrop="static"
+            data-keyboard="false"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <h4>Payment Method</h4>
+                  <hr />
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="bankcard"
+                      id="inlineRadio1"
+                      value="option1"
+                    />
+                    <label class="form-check-label" for="inlineRadio1"
+                      >Debit card</label
+                    >
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="bankcard"
+                      id="inlineRadio1"
+                      value="option1"
+                    />
+                    <label class="form-check-label" for="inlineRadio1"
+                      >Credit card</label
+                    >
+                  </div>
+                  <p>Payment amount:</p>
+                  <h4>$10</h4>
+                  <div class="row mt-4">
+                    <div class="col-md-12 form-group">
+                      <label for="card-name">Name on card</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="card-name"
+                        placeholder
+                      />
+                      <div class="invalid-feedback">
+                        Name on card is required
+                      </div>
+                    </div>
+
+                    <div class="col-md-12 form-group">
+                      <label for="card-no">Card Number</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="card-no"
+                        placeholder
+                      />
+                      <div class="invalid-feedback">
+                        Credit card number is required
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-6 form-group">
+                      <label for="expiration">Expiration Date</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="card-name"
+                        placeholder
+                      />
+                      <div class="invalid-feedback">
+                        Expiration date required
+                      </div>
+                    </div>
+
+                    <div class="col-6 form-group">
+                      <label for="ccv-no">CVV</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="sec-no"
+                        placeholder
+                      />
+                      <div class="invalid-feedback">Security code required</div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="d-flex justify-content-center my-1 p-3"
+                  style="margin-top: -70px; position: relative; z-index: 2"
+                >
+                  <button
+                    class="modal-cta next-modal"
+                    data-dismiss="modal"
+                    data-target="#ninth-modal"
+                  >
+                    <i class="fa fa-lock"></i>Pay $10.00
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- eigth Modal -->
+          <div
+            class="modal"
+            id="ninth-modal"
+            data-backdrop="static"
+            data-keyboard="false"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content" style="padding-top: 150px">
+                <div class="modal-body">
+                  <br />
+                  <div class="card-content">
+                    <p class="text-center" style="font-size: 18px">
+                      Your account has been created Successfully. We will be
+                      sending weekly updates.
+                    </p>
+                    <div class="d-flex justify-content-center">
+                      <button
+                        class="modal-cta next-modal"
+                        onclick="navigateProfile()"
+                      >
+                        Complete
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
     </main>
     <!-- Footer-->
     <footer class="bg-success py-5">
       <div class="container-fluid text-center">
-        
+        <h2 class="h2 mb-5" style="color: #fff; font-weight: 700; font-size: 30px;">Welcome!<br/> To The Age Of Hunger Liberation</h2>
         <div class="row justify-content-center">
-          <div class="col-md-4">
-          <!-- <a href="/" class="d-flex justify-content-start" aria-label="Go home" title="Company">
+          <div class="col-md-0">
+           <!-- <a href="/" class="d-flex justify-content-start" aria-label="Go home" title="Company">
               <img src="../assets/images/Brandlogs Inc Logo NEW LOGO 14.08 1.png" style="width: 140px; height: 140px; margin-bottom: 40px;" alt="logo" class="img-fluid">
             </a>-->
             <div class="">
@@ -532,33 +814,35 @@
               </div>
             </div>
           </div>
-          <div class="col-md-8 d-flex justify-content-center footer-links-column">
-            
-            <div class="footer-links">
-              <h2 class="h2 mb-5 footer-header">Welcome!<br/> To The Age Of Hunger Liberation</h2>
+          <div class="col-md-12 d-flex justify-content-center">
+            <div class="footer-links ">
+              
               <div>
-                <a href="#About" class="text-decoration-none">About Us</a>
+                <a href="../LandingPage/landingPage.html" class="text-decoration-none   ">About Us</a>
               </div>
               <div>
-                <a href="#Benefits" class="text-decoration-none">Benefits</a>
+                <a href="../LandingPage/landingPage.html" class="text-decoration-none ">Benefits</a>
               </div>
               <div>
-                <a href="#OurStories" class="text-decoration-none">Our Stories</a>
+                <a href="../LandingPage/landingPage.html" class="text-decoration-none  ">Our Stories</a>
               </div>
               <div>
-                  <a href="#FAQs" class="text-decoration-none">FAQs</a>
+                  <a href="../LandingPage/landingPage.html" class="text-decoration-none ">FAQs</a>
               </div>
               <div>
-                  <a href="/" class="text-decoration-none text-white">Privacy Policy</a>
+                  <a href="../PrivacyPolicy/privacyPolicy.html" class="text-decoration-none  ">Privacy Policy</a>
               </div>
               <div>
-                  <a href="/" class="text-decoration-none text-white">Terms &amp; Conditions</a>
+                  <a href="../TermsAndConditions/termsAndConditions.html " class="text-decoration-none ">Terms &amp; Conditions</a>
               </div>
+              <div>
+                <a href="../BrandlogsForms/adminLogin.html" class="text-decoration-none "><b>Admin Login</b></a>
+            </div>
               <br/>
               <div>
-                <a href="../ContactForm/contact.html" class="text-decoration-none" style="color: white; font-weight: 600;">Contact Us</a>
+                <a href="../ContactForm/contact.html" class="text-decoration-none ">Contact Us</a>
               </div>
-              <p class="text-white pt-2">94306 Palo Alto, CA, United States</p>
+              <p class="text-end text-white pt-2">94306 Palo Alto, CA, United States</p>
               <br/>
               <p  style="margin-top: -30px; color: white;">© Copyright 2020 Brandlogs Inc. All rights reserved.</p>
             </div>
@@ -566,7 +850,7 @@
           </div>
         </div>
         <div class="row">
-        
+         
         </div>
       </div>
     </footer>
@@ -574,6 +858,13 @@
     <!-- Scripts-->
     <!-- Scripts-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.4/js/utils.js"></script>
+
+    <script>
+            
+      function navigateProfile(){
+  window.location.href = "../Logstories/logstories.html"
+}
+</script>
 
     <!-- Navigate to Checkout -->
     <script>

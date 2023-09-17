@@ -30,7 +30,7 @@ html {
   width: 50%;
 }
 
-/* .cta {
+.cta {
   padding: 12px 20px;
   border: none;
   outline: none;
@@ -39,22 +39,20 @@ html {
   margin: 2px;
   width: 180px;
   border-radius: 5px;
-} */
+}
 
 .nav-search-bar {
   border: 1px solid #1c9346;
 }
 
 .cta {
-  padding: 10px 20px;
+  padding: 12px 20px;
   border: none;
   outline: none;
   background: #db2127;
   color: white;
-  font-size: large;
   margin: 2px;
-  width: 200px;
-  border-radius: 5px;
+  width: 180px;
 }
 
 @media screen and (max-width: 900px) {
@@ -64,7 +62,7 @@ html {
     outline: none;
     background: #db2127;
     color: white;
-    width: 200px;
+    width: 180px;
     margin: 20px 0px;
   }
 
@@ -324,26 +322,16 @@ ul ul a {
   outline: none;
 }
 
-.connect-btn {
-  background-color: #fff;
-  border-radius: 5px;
-  color: #888;
-  border: 1px solid #1c9346;
-  padding: 5px 20px;
-  font-size: 16px;
-  font-weight: 600;
-}
-.connect-btn:hover {
-  background-color: #1c9346;
-  border-radius: 5px;
-  color: white;
-}
-
 .log-stories-hr {
   width: 100vw;
   margin-left: -62px;
   position: relative;
   z-index: 0;
+}
+
+.connect-btn:hover {
+  background-color: #1c9346;
+  border-radius: 5px;
 }
 
 #log-card {
@@ -516,8 +504,8 @@ Connects
   color: white;
   outline: none;
   border: none;
-  margin: 20px;
   border-radius: 5px;
+  margin-top: 20px;
   width: 100%;
 }
 
@@ -528,6 +516,16 @@ Connects
   outline: none;
   border: 1px solid #1c9346;
   border-radius: 5px;
+}
+
+#phone {
+  width: 450px;
+}
+
+@media screen and (max-width: 550px) {
+  div #phone {
+    width: 250px;
+  }
 }
 
 .otp-field {
@@ -561,6 +559,11 @@ Connects
 
 #modal-content {
   width: 100%;
+}
+
+.modal-content {
+  height: 550px;
+  padding-top: 10%;
 }
 
 @media screen and (max-width: 520px) {
@@ -619,4 +622,19 @@ Invitation flow Profile
   cursor: pointer;
   width: 100px;
   height: 100px;
+}
+
+.gift-icon {
+  border-radius: 0px 0px 0px 10px;
+}
+
+@media screen and (max-width: 990px) {
+  div .gift-icon {
+    border-radius: 0px 0px 10px 10px;
+  }
+}
+
+.dob-input {
+  padding: 5px 20px;
+  margin: 5px 10px;
 }

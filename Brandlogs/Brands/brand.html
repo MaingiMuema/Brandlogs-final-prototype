@@ -45,6 +45,9 @@
       href="/assets/images/Brandlogs Inc Logo NEW LOGO 14.08 1.png"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="../Connects/card.css" />
+    <link rel="stylesheet" href="../Connects/card.css" />
+    <link rel="stylesheet" href="./login.css" />
     <title>Brandlogs</title>
   </head>
   <body>
@@ -87,7 +90,9 @@
               <div id="suggestion-list"></div>
             </form>
             <div class="d-flex flex-column align-items-center">
-              <p>To Get $250 Bonus</p>
+              <p class="small" style="margin-bottom: -2px">
+                To Get $250 Hero Bonus
+              </p>
               <button
                 class="cta fw-bold"
                 data-toggle="modal"
@@ -168,170 +173,767 @@
         </nav>
       </div>
       <!-- Page Content Holder -->
-      <div id="content" class="pt-5">
+      <div id="content">
         <!-- Connect  Container -->
-        <div class="d-flex justify-content-end" style="padding-right: 40px">
-          <a
-            href="#"
-            class="connect-btn"
-            data-toggle="modal"
-            data-target="#first-modal"
-          >
-            <button class="btn font-weight-bold px-4 py-1">Connect</button>
-          </a>
-        </div>
-        <div
-          class="container-fluid d-flex flex-column justify-content-start align-items-center align-items-md-start flex-md-row mt-4 mb-5"
-        >
-          <a
-            href="../BrandProfile/brandLogStories.html"
-            style="text-decoration: none; color: #000"
-          >
-            <div
-              class="rounded-3 p-2 px-4 px-md-5 py-md-3 d-flex flex-row align-items-center gap-4 card-container"
-            >
-              <div class="pic col-2">
-                <img
-                  src="../Assets/images/school logo.png"
-                  width=""
-                  class="w-100"
-                  alt=""
-                />
-              </div>
-              <div class="cont">
-                <h2 class="my-3 fs-6">School 1</h2>
-                <ul class="list-unstyled d-flex gap-2">
-                  <li>
-                    <strong class="font-weight-bold">Logged by:</strong> 200
-                  </li>
-                  <li>
-                    <strong class="font-weight-bold">Connects:</strong> 200
-                  </li>
-                </ul>
+        <div class="">
+          <div class="row">
+            <div class="col-12 col-md-10 col-lg-10 col-xl-7 mb-3">
+              <div
+                class="position-relative card"
+                style="border-radius: 10px; background-color: #f9f9f9"
+              >
+                <div class="card-body p-3 p-md-4">
+                  <div class="d-md-flex align-items-center">
+                    <div class="position-absolute top-0 end-0 ms-auto m-3">
+                      <button
+                        type="button"
+                        data-toggle="modal"
+                        data-target="#first-modal"
+                        class="btn px-4 py-2"
+                      >
+                        Connect
+                      </button>
+                    </div>
+                    <a
+                      href="../LogStories/LogStoryTony.html"
+                      class="text-decoration-none"
+                    >
+                      <div class="flex-shrink-0">
+                        <img
+                          src="../Assets/images/tony.jpg"
+                          alt="Generic placeholder image"
+                          class="img-fluid"
+                          style="width: 120px; border-radius: 50%"
+                        />
+                      </div>
+                    </a>
+                    <div class="mt-5 mt-md-0 ms-md-3">
+                      <div>
+                        <h5 class="mb-4 mt-3">Tony Robbins</h5>
+                      </div>
+                      <div
+                        class="d-flex flex-column justify-content-start mt-3 ms-0"
+                      >
+                        <div class="d-flex">
+                          <p class="small text-muted mb-1">Logged by:</p>
+                          <p class="ms-2">41</p>
+                        </div>
+                        <div class="d-flex">
+                          <p class="small text-muted mb-1">Connects:</p>
+                          <p class="ms-2">976</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </a>
+          </div>
+          <hr class="log-stories-hr" />
+          <!-- End of Connect Container -->
         </div>
-        <hr class="log-stories-hr" style="margin-top: -20px" />
-        <!-- End of Connect Container -->
-        <!-- Connect  Container -->
-        <div class="d-flex justify-content-end" style="padding-right: 40px">
-          <a
-            href="#"
-            class="connect-btn"
-            data-toggle="modal"
-            data-target="#first-modal"
-          >
-            <button class="btn font-weight-bold px-4 py-1">Connect</button>
-          </a>
-        </div>
-        <div
-          class="container-fluid d-flex flex-column justify-content-start align-items-center align-items-md-start flex-md-row mt-4 mb-5"
-        >
-          <a
-            href="../BrandProfile/brandLogStories.html"
-            style="text-decoration: none; color: #000"
-          >
-            <div
-              class="rounded-3 p-2 px-4 px-md-5 py-md-3 d-flex flex-row align-items-center gap-4 card-container"
-            >
-              <div class="pic col-2">
-                <img
-                  src="../Assets/images/school logo.png"
-                  width=""
-                  class="w-100"
-                  alt=""
-                />
-              </div>
-              <div class="cont">
-                <h2 class="my-3 fs-6">School 2</h2>
-                <ul class="list-unstyled d-flex gap-2">
-                  <li>
-                    <strong class="font-weight-bold">Logged by:</strong> 200
-                  </li>
-                  <li>
-                    <strong class="font-weight-bold">Connects:</strong> 200
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </a>
-        </div>
-        <hr class="log-stories-hr" style="margin-top: -20px" />
-        <!-- End of Connect Container -->
-        <!-- Connect  Container -->
-        <div class="d-flex justify-content-end" style="padding-right: 40px">
-          <a
-            href="#"
-            class="connect-btn"
-            data-toggle="modal"
-            data-target="#first-modal"
-          >
-            <button class="btn font-weight-bold px-4 py-1">Connect</button>
-          </a>
-        </div>
-        <div
-          class="container-fluid d-flex flex-column justify-content-start align-items-center align-items-md-start flex-md-row mt-4 mb-5"
-        >
-          <a
-            href="../BrandProfile/brandLogStories.html"
-            style="text-decoration: none; color: #000"
-          >
-            <div
-              class="rounded-3 p-2 px-4 px-md-5 py-md-3 d-flex flex-row align-items-center gap-4 card-container"
-            >
-              <div class="pic col-2">
-                <img
-                  src="../Assets/images/school logo.png"
-                  width=""
-                  class="w-100"
-                  alt=""
-                />
-              </div>
-              <div class="cont">
-                <h2 class="my-3 fs-6">School 3</h2>
-                <ul class="list-unstyled d-flex gap-2">
-                  <li>
-                    <strong class="font-weight-bold">Logged by:</strong> 200
-                  </li>
-                  <li>
-                    <strong class="font-weight-bold">Connects:</strong> 200
-                  </li>
-                </ul>
+
+        <div class="">
+          <div class="row">
+            <div class="col-12 col-md-10 col-lg-10 col-xl-7 mb-3">
+              <div
+                class="position-relative card"
+                style="border-radius: 10px; background-color: #f9f9f9"
+              >
+                <div class="card-body p-3 p-md-4">
+                  <div class="d-md-flex align-items-center">
+                    <div class="position-absolute top-0 end-0 ms-auto m-3">
+                      <button
+                        type="button"
+                        data-toggle="modal"
+                        data-target="#first-modal"
+                        class="btn px-4 py-2"
+                      >
+                        Connect
+                      </button>
+                    </div>
+                    <a
+                      href="../BrandProfile/brandLogStories.html"
+                      class="text-decoration-none"
+                    >
+                      <div class="flex-shrink-0">
+                        <img
+                          src="../Assets/images/logo1.png"
+                          alt="Generic placeholder image"
+                          class="img-fluid"
+                          style="width: 120px; border-radius: 50%"
+                        />
+                      </div>
+                    </a>
+                    <div class="mt-5 mt-md-0 ms-md-3">
+                      <div>
+                        <h5 class="mb-4 mt-3">Kabarak Primary School</h5>
+                      </div>
+                      <div
+                        class="d-flex flex-column justify-content-start mt-3 ms-0"
+                      >
+                        <div class="d-flex">
+                          <p class="small text-muted mb-1">Logged by:</p>
+                          <p class="ms-2">41</p>
+                        </div>
+                        <div class="d-flex">
+                          <p class="small text-muted mb-1">Connects:</p>
+                          <p class="ms-2">976</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </a>
+          </div>
+          <hr class="log-stories-hr" />
+          <!-- End of Connect Container -->
         </div>
-        <hr class="log-stories-hr" style="margin-top: -20px" />
-        <!-- End of Connect Container -->
+
+        <div class="">
+          <div class="row">
+            <div class="col-12 col-md-10 col-lg-10 col-xl-7 mb-3">
+              <div
+                class="position-relative card"
+                style="border-radius: 10px; background-color: #f9f9f9"
+              >
+                <div class="card-body p-3 p-md-4">
+                  <div class="d-md-flex align-items-center">
+                    <div class="position-absolute top-0 end-0 ms-auto m-3">
+                      <button
+                        type="button"
+                        data-toggle="modal"
+                        data-target="#first-modal"
+                        class="btn px-4 py-2"
+                      >
+                        Connect
+                      </button>
+                    </div>
+                    <a
+                      href="../BrandProfile/brandLogStories.html"
+                      class="text-decoration-none"
+                    >
+                      <div class="flex-shrink-0">
+                        <img
+                          src="../Assets/images/logo2.jpeg"
+                          alt="Generic placeholder image"
+                          class="img-fluid"
+                          style="width: 120px; border-radius: 50%"
+                        />
+                      </div>
+                    </a>
+                    <div class="mt-5 mt-md-0 ms-md-3">
+                      <div>
+                        <h5 class="mb-4 mt-3">Bright Minds Academy</h5>
+                      </div>
+                      <div
+                        class="d-flex flex-column justify-content-start mt-3 ms-0"
+                      >
+                        <div class="d-flex">
+                          <p class="small text-muted mb-1">Logged by:</p>
+                          <p class="ms-2">41</p>
+                        </div>
+                        <div class="d-flex">
+                          <p class="small text-muted mb-1">Connects:</p>
+                          <p class="ms-2">976</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="log-stories-hr" />
+          <!-- End of Connect Container -->
+        </div>
+
+        <div class="">
+          <div class="row">
+            <div class="col-12 col-md-10 col-lg-10 col-xl-7 mb-3">
+              <div
+                class="position-relative card"
+                style="border-radius: 10px; background-color: #f9f9f9"
+              >
+                <div class="card-body p-3 p-md-4">
+                  <div class="d-md-flex align-items-center">
+                    <div class="position-absolute top-0 end-0 ms-auto m-3">
+                      <button
+                        type="button"
+                        data-toggle="modal"
+                        data-target="#first-modal"
+                        class="btn px-4 py-2"
+                      >
+                        Connect
+                      </button>
+                    </div>
+                    <a
+                      href="../BrandProfile/brandLogStories.html"
+                      class="text-decoration-none"
+                    >
+                      <div class="flex-shrink-0">
+                        <img
+                          src="../Assets/images/logo1.png"
+                          alt="Generic placeholder image"
+                          class="img-fluid"
+                          style="width: 120px; border-radius: 50%"
+                        />
+                      </div>
+                    </a>
+                    <div class="mt-5 mt-md-0 ms-md-3">
+                      <div>
+                        <h5 class="mb-4 mt-3">Kabarak Primary School</h5>
+                      </div>
+                      <div
+                        class="d-flex flex-column justify-content-start mt-3 ms-0"
+                      >
+                        <div class="d-flex">
+                          <p class="small text-muted mb-1">Logged by:</p>
+                          <p class="ms-2">41</p>
+                        </div>
+                        <div class="d-flex">
+                          <p class="small text-muted mb-1">Connects:</p>
+                          <p class="ms-2">976</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="log-stories-hr" />
+          <!-- End of Connect Container -->
+        </div>
+
+        <div class="">
+          <div class="row">
+            <div class="col-12 col-md-10 col-lg-10 col-xl-7 mb-3">
+              <div
+                class="position-relative card"
+                style="border-radius: 10px; background-color: #f9f9f9"
+              >
+                <div class="card-body p-3 p-md-4">
+                  <div class="d-md-flex align-items-center">
+                    <div class="position-absolute top-0 end-0 ms-auto m-3">
+                      <button
+                        type="button"
+                        data-toggle="modal"
+                        data-target="#first-modal"
+                        class="btn px-4 py-2"
+                      >
+                        Connect
+                      </button>
+                    </div>
+                    <a
+                      href="../BrandProfile/brandLogStories.html"
+                      class="text-decoration-none"
+                    >
+                      <div class="flex-shrink-0">
+                        <img
+                          src="../Assets/images/logo3.png"
+                          alt="Generic placeholder image"
+                          class="img-fluid"
+                          style="width: 120px; border-radius: 50%"
+                        />
+                      </div>
+                    </a>
+                    <div class="mt-5 mt-md-0 ms-md-3">
+                      <div>
+                        <h5 class="mb-4 mt-3">Rafiki Junior School</h5>
+                      </div>
+                      <div
+                        class="d-flex flex-column justify-content-start mt-3 ms-0"
+                      >
+                        <div class="d-flex">
+                          <p class="small text-muted mb-1">Logged by:</p>
+                          <p class="ms-2">41</p>
+                        </div>
+                        <div class="d-flex">
+                          <p class="small text-muted mb-1">Connects:</p>
+                          <p class="ms-2">976</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="log-stories-hr" />
+          <!-- End of Connect Container -->
+        </div>
+
+        <div class="">
+          <div class="row">
+            <div class="col-12 col-md-10 col-lg-10 col-xl-7 mb-3">
+              <div
+                class="position-relative card"
+                style="border-radius: 10px; background-color: #f9f9f9"
+              >
+                <div class="card-body p-3 p-md-4">
+                  <div class="d-md-flex align-items-center">
+                    <div class="position-absolute top-0 end-0 ms-auto m-3">
+                      <button
+                        type="button"
+                        data-toggle="modal"
+                        data-target="#first-modal"
+                        class="btn px-4 py-2"
+                      >
+                        Connect
+                      </button>
+                    </div>
+                    <a
+                      href="../BrandProfile/brandLogStories.html"
+                      class="text-decoration-none"
+                    >
+                      <div class="flex-shrink-0">
+                        <img
+                          src="../Assets/images/logo3.png"
+                          alt="Generic placeholder image"
+                          class="img-fluid"
+                          style="width: 120px; border-radius: 50%"
+                        />
+                      </div>
+                    </a>
+                    <div class="mt-5 mt-md-0 ms-md-3">
+                      <div>
+                        <h5 class="mb-4 mt-3">Bright Minds Academy</h5>
+                      </div>
+                      <div
+                        class="d-flex flex-column justify-content-start mt-3 ms-0"
+                      >
+                        <div class="d-flex">
+                          <p class="small text-muted mb-1">Logged by:</p>
+                          <p class="ms-2">41</p>
+                        </div>
+                        <div class="d-flex">
+                          <p class="small text-muted mb-1">Connects:</p>
+                          <p class="ms-2">976</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="log-stories-hr" />
+          <!-- End of Connect Container -->
+        </div>
+
+        <div class="">
+          <div class="row">
+            <div class="col-12 col-md-10 col-lg-10 col-xl-7 mb-3">
+              <div
+                class="position-relative card"
+                style="border-radius: 10px; background-color: #f9f9f9"
+              >
+                <div class="card-body p-3 p-md-4">
+                  <div class="d-md-flex align-items-center">
+                    <div class="position-absolute top-0 end-0 ms-auto m-3">
+                      <button
+                        type="button"
+                        data-toggle="modal"
+                        data-target="#first-modal"
+                        class="btn px-4 py-2"
+                      >
+                        Connect
+                      </button>
+                    </div>
+                    <a
+                      href="../BrandProfile/brandLogStories.html"
+                      class="text-decoration-none"
+                    >
+                      <div class="flex-shrink-0">
+                        <img
+                          src="../Assets/images/logo2.jpeg"
+                          alt="Generic placeholder image"
+                          class="img-fluid"
+                          style="width: 120px; border-radius: 50%"
+                        />
+                      </div>
+                    </a>
+                    <div class="mt-5 mt-md-0 ms-md-3">
+                      <div>
+                        <h5 class="mb-4 mt-3">Kabarak Primary School</h5>
+                      </div>
+                      <div
+                        class="d-flex flex-column justify-content-start mt-3 ms-0"
+                      >
+                        <div class="d-flex">
+                          <p class="small text-muted mb-1">Logged by:</p>
+                          <p class="ms-2">41</p>
+                        </div>
+                        <div class="d-flex">
+                          <p class="small text-muted mb-1">Connects:</p>
+                          <p class="ms-2">976</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="log-stories-hr" />
+          <!-- End of Connect Container -->
+        </div>
+
+        <div class="">
+          <div class="row">
+            <div class="col-12 col-md-10 col-lg-10 col-xl-7 mb-3">
+              <div
+                class="position-relative card"
+                style="border-radius: 10px; background-color: #f9f9f9"
+              >
+                <div class="card-body p-3 p-md-4">
+                  <div class="d-md-flex align-items-center">
+                    <div class="position-absolute top-0 end-0 ms-auto m-3">
+                      <button
+                        type="button"
+                        data-toggle="modal"
+                        data-target="#first-modal"
+                        class="btn px-4 py-2"
+                      >
+                        Connect
+                      </button>
+                    </div>
+                    <a
+                      href="../BrandProfile/brandLogStories.html"
+                      class="text-decoration-none"
+                    >
+                      <div class="flex-shrink-0">
+                        <img
+                          src="../Assets/images/logo2.jpeg"
+                          alt="Generic placeholder image"
+                          class="img-fluid"
+                          style="width: 120px; border-radius: 50%"
+                        />
+                      </div>
+                    </a>
+                    <div class="mt-5 mt-md-0 ms-md-3">
+                      <div>
+                        <h5 class="mb-4 mt-3">Rafiki Junior School</h5>
+                      </div>
+                      <div
+                        class="d-flex flex-column justify-content-start mt-3 ms-0"
+                      >
+                        <div class="d-flex">
+                          <p class="small text-muted mb-1">Logged by:</p>
+                          <p class="ms-2">41</p>
+                        </div>
+                        <div class="d-flex">
+                          <p class="small text-muted mb-1">Connects:</p>
+                          <p class="ms-2">976</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="log-stories-hr" />
+          <!-- End of Connect Container -->
+        </div>
+
+        <div class="">
+          <div class="row">
+            <div class="col-12 col-md-10 col-lg-10 col-xl-7 mb-3">
+              <div
+                class="position-relative card"
+                style="border-radius: 10px; background-color: #f9f9f9"
+              >
+                <div class="card-body p-3 p-md-4">
+                  <div class="d-md-flex align-items-center">
+                    <div class="position-absolute top-0 end-0 ms-auto m-3">
+                      <button
+                        type="button"
+                        data-toggle="modal"
+                        data-target="#first-modal"
+                        class="btn px-4 py-2"
+                      >
+                        Connect
+                      </button>
+                    </div>
+                    <a
+                      href="../BrandProfile/brandLogStories.html"
+                      class="text-decoration-none"
+                    >
+                      <div class="flex-shrink-0">
+                        <img
+                          src="../Assets/images/logo3.png"
+                          alt="Generic placeholder image"
+                          class="img-fluid"
+                          style="width: 120px; border-radius: 50%"
+                        />
+                      </div>
+                    </a>
+                    <div class="mt-5 mt-md-0 ms-md-3">
+                      <div>
+                        <h5 class="mb-4 mt-3">Kabarak Primary School</h5>
+                      </div>
+                      <div
+                        class="d-flex flex-column justify-content-start mt-3 ms-0"
+                      >
+                        <div class="d-flex">
+                          <p class="small text-muted mb-1">Logged by:</p>
+                          <p class="ms-2">41</p>
+                        </div>
+                        <div class="d-flex">
+                          <p class="small text-muted mb-1">Connects:</p>
+                          <p class="ms-2">976</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="log-stories-hr" />
+          <!-- End of Connect Container -->
+        </div>
+
+        <div class="">
+          <div class="row">
+            <div class="col-12 col-md-10 col-lg-10 col-xl-7 mb-3">
+              <div
+                class="position-relative card"
+                style="border-radius: 10px; background-color: #f9f9f9"
+              >
+                <div class="card-body p-3 p-md-4">
+                  <div class="d-md-flex align-items-center">
+                    <div class="position-absolute top-0 end-0 ms-auto m-3">
+                      <button
+                        type="button"
+                        data-toggle="modal"
+                        data-target="#first-modal"
+                        class="btn px-4 py-2"
+                      >
+                        Connect
+                      </button>
+                    </div>
+                    <a
+                      href="../BrandProfile/brandLogStories.html"
+                      class="text-decoration-none"
+                    >
+                      <div class="flex-shrink-0">
+                        <img
+                          src="../Assets/images/logo1.png"
+                          alt="Generic placeholder image"
+                          class="img-fluid"
+                          style="width: 120px; border-radius: 50%"
+                        />
+                      </div>
+                    </a>
+                    <div class="mt-5 mt-md-0 ms-md-3">
+                      <div>
+                        <h5 class="mb-4 mt-3">Bright Minds Academy</h5>
+                      </div>
+                      <div
+                        class="d-flex flex-column justify-content-start mt-3 ms-0"
+                      >
+                        <div class="d-flex">
+                          <p class="small text-muted mb-1">Logged by:</p>
+                          <p class="ms-2">41</p>
+                        </div>
+                        <div class="d-flex">
+                          <p class="small text-muted mb-1">Connects:</p>
+                          <p class="ms-2">976</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="log-stories-hr" />
+          <!-- End of Connect Container -->
+        </div>
+
+        <div class="">
+          <div class="row">
+            <div class="col-12 col-md-10 col-lg-10 col-xl-7 mb-3">
+              <div
+                class="position-relative card"
+                style="border-radius: 10px; background-color: #f9f9f9"
+              >
+                <div class="card-body p-3 p-md-4">
+                  <div class="d-md-flex align-items-center">
+                    <div class="position-absolute top-0 end-0 ms-auto m-3">
+                      <button
+                        type="button"
+                        data-toggle="modal"
+                        data-target="#first-modal"
+                        class="btn px-4 py-2"
+                      >
+                        Connect
+                      </button>
+                    </div>
+                    <a
+                      href="../BrandProfile/brandLogStories.html"
+                      class="text-decoration-none"
+                    >
+                      <div class="flex-shrink-0">
+                        <img
+                          src="../Assets/images/logo2.jpeg"
+                          alt="Generic placeholder image"
+                          class="img-fluid"
+                          style="width: 120px; border-radius: 50%"
+                        />
+                      </div>
+                    </a>
+                    <div class="mt-5 mt-md-0 ms-md-3">
+                      <div>
+                        <h5 class="mb-4 mt-3">Rafiki Junior School</h5>
+                      </div>
+                      <div
+                        class="d-flex flex-column justify-content-start mt-3 ms-0"
+                      >
+                        <div class="d-flex">
+                          <p class="small text-muted mb-1">Logged by:</p>
+                          <p class="ms-2">41</p>
+                        </div>
+                        <div class="d-flex">
+                          <p class="small text-muted mb-1">Connects:</p>
+                          <p class="ms-2">976</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="log-stories-hr" />
+          <!-- End of Connect Container -->
+        </div>
+
+        <div class="">
+          <div class="row">
+            <div class="col-12 col-md-10 col-lg-10 col-xl-7 mb-3">
+              <div
+                class="position-relative card"
+                style="border-radius: 10px; background-color: #f9f9f9"
+              >
+                <div class="card-body p-3 p-md-4">
+                  <div class="d-md-flex align-items-center">
+                    <div class="position-absolute top-0 end-0 ms-auto m-3">
+                      <button
+                        type="button"
+                        data-toggle="modal"
+                        data-target="#first-modal"
+                        class="btn px-4 py-2"
+                      >
+                        Connect
+                      </button>
+                    </div>
+                    <a
+                      href="../BrandProfile/brandLogStories.html"
+                      class="text-decoration-none"
+                    >
+                      <div class="flex-shrink-0">
+                        <img
+                          src="../Assets/images/logo3.png"
+                          alt="Generic placeholder image"
+                          class="img-fluid"
+                          style="width: 120px; border-radius: 50%"
+                        />
+                      </div>
+                    </a>
+                    <div class="mt-5 mt-md-0 ms-md-3">
+                      <div>
+                        <h5 class="mb-4 mt-3">Kabarak Primary School</h5>
+                      </div>
+                      <div
+                        class="d-flex flex-column justify-content-start mt-3 ms-0"
+                      >
+                        <div class="d-flex">
+                          <p class="small text-muted mb-1">Logged by:</p>
+                          <p class="ms-2">41</p>
+                        </div>
+                        <div class="d-flex">
+                          <p class="small text-muted mb-1">Connects:</p>
+                          <p class="ms-2">976</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="log-stories-hr" />
+          <!-- End of Connect Container -->
+        </div>
       </div>
 
+      <!-- End of Connect Container -->
+
+      <!-- Modals -->
       <div class="container text-center">
         <!-- First Modal -->
+
         <div
-          class="modal fade"
+          class="modal"
           id="first-modal"
           data-backdrop="static"
           data-keyboard="false"
         >
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-              <div class="d-flex justify-content-end">
-                <button
-                  type="button"
-                  style="
-                    border: none;
-                    background-color: #db2127;
-                    border-radius: 2px;
-                    color: white;
-                  "
-                  class="close"
-                  data-dismiss="modal"
-                  aria-label="Close"
-                >
-                  <span aria-hidden="true">&times;</span>
-                </button>
+              <div class="modal-body">
+                <br />
+                <div class="container">
+                  <div class="row">
+                    <div class="">
+                      <div class="user-detail p-5">
+                        <form>
+                          <p class="text-start text-capitalize fs-6">
+                            Kindly input your invitation code below
+                          </p>
+                          <div class="form-group">
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="name"
+                              placeholder="Enter your invitation code"
+                              name="name"
+                            />
+                          </div>
+                        </form>
+                        <div class="d-flex justify-content-center mt-3">
+                          <button
+                            class="modal-cta next-modal w-100"
+                            data-dismiss="modal"
+                            data-target="#second-modal"
+                          >
+                            Confirm
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Modal -->
+
+        <div
+          class="modal fade"
+          id="second-modal"
+          data-backdrop="static"
+          data-keyboard="false"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content d-flex">
               <div class="modal-body">
                 <div class="d-flex justify-content-center">
                   <img
@@ -357,39 +959,11 @@
                   <button
                     class="modal-cta next-modal"
                     data-dismiss="modal"
-                    data-target="#second-modal"
+                    data-target="#third-modal"
                   >
-                    Accept
+                    Get started
                   </button>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Second Modal -->
-        <div
-          class="modal"
-          id="second-modal"
-          data-backdrop="static"
-          data-keyboard="false"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-body">
-                <h4>Verify Phone Number</h4>
-                <br />
-                <input type="tel" id="phone" class="form-control" />
-              </div>
-              <br />
-              <div class="d-flex justify-content-center">
-                <button
-                  class="modal-cta next-modal"
-                  data-dismiss="modal"
-                  data-target="#third-modal"
-                >
-                  Submit
-                </button>
               </div>
             </div>
           </div>
@@ -399,6 +973,36 @@
         <div
           class="modal"
           id="third-modal"
+          data-backdrop="static"
+          data-keyboard="false"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="padding-top: 30%">
+              <div class="modal-body">
+                <h4>Verify Phone Number</h4>
+                <br />
+                <div style="width: 100%">
+                  <input type="tel" id="phone" class="form-control" />
+                </div>
+                <br />
+                <div class="d-flex justify-content-center">
+                  <button
+                    class="modal-cta next-modal"
+                    data-dismiss="modal"
+                    data-target="#fourth-modal"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fourth Modal -->
+        <div
+          class="modal"
+          id="fourth-modal"
           data-backdrop="static"
           data-keyboard="false"
         >
@@ -427,103 +1031,30 @@
                           <input type="number" disabled />
                         </div>
                       </div>
+                      <div
+                        class="d-flex justify-content-center"
+                        style="
+                          margin-top: -70px;
+                          position: relative;
+                          z-index: 2;
+                        "
+                      >
+                        <button
+                          class="modal-cta next-modal"
+                          data-dismiss="modal"
+                          data-target="#fifth-modal"
+                        >
+                          Submit
+                        </button>
+                      </div>
+                      <p class="resend text-muted mb-0">
+                        Didn't receive code? <a href="">Request again</a>
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div
-                class="d-flex justify-content-center"
-                style="margin-top: -70px; position: relative; z-index: 2"
-              >
-                <button
-                  class="modal-cta next-modal"
-                  data-dismiss="modal"
-                  data-target="#fourth-modal"
-                >
-                  Submit
-                </button>
-              </div>
-              <p class="resend text-muted mb-0">
-                Didn't receive code? <a href="">Request again</a>
-              </p>
               <br />
-            </div>
-          </div>
-        </div>
-
-        <!-- Fourth Modal -->
-        <div
-          class="modal"
-          id="fourth-modal"
-          data-backdrop="static"
-          data-keyboard="false"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-body">
-                <h4>Profile</h4>
-                <br />
-                <div class="container">
-                  <div class="row">
-                    <div class="">
-                      <div class="d-flex justify-content-center">
-                        <div class="profile-pic">
-                          <img
-                            alt="User Pic"
-                            src="https://d30y9cdsu7xlg0.cloudfront.net/png/138926-200.png"
-                            id="profile-image1"
-                            height="200"
-                          />
-                          <input
-                            id="profile-image-upload"
-                            class="hidden"
-                            hidden
-                            type="file"
-                            onchange="previewFile()"
-                          />
-                          <div style="color: #999"></div>
-                        </div>
-                      </div>
-
-                      <div class="user-detail">
-                        <p class="text-start">Name</p>
-                        <div class="form-group">
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="name"
-                            placeholder="Enter your Name"
-                            name="name"
-                          />
-                        </div>
-                        <br />
-                        <p class="text-start">Bio</p>
-                        <div class="form-group">
-                          <textarea
-                            type="text"
-                            class="form-control"
-                            id="bio"
-                            placeholder="Input your Bio"
-                            name="bio"
-                          ></textarea>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="d-flex justify-content-center my-1"
-                style="margin-top: -70px; position: relative; z-index: 2"
-              >
-                <button
-                  class="modal-cta next-modal"
-                  data-dismiss="modal"
-                  data-target="#fifth-modal"
-                >
-                  Create Profile
-                </button>
-              </div>
             </div>
           </div>
         </div>
@@ -538,34 +1069,306 @@
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <div class="modal-body">
-                <h1>Congratulations!</h1>
+                <h4>When is your Birthday?</h4>
                 <br />
-                <p>
-                  Your Profile has been created successfully. We have awarded
-                  you $250 bonus.
-                </p>
-                <br />
-                <div class="d-flex justify-content-center">
-                  <input type="checkbox" class="" name="accept" />
-                  <span
-                    >&nbsp;&nbsp; I have read and accepted
-                    <a href="../TermsAndConditions/termsAndConditions.html"
-                      >terms of use</a
-                    ></span
-                  >
+                <div class="container">
+                  <div class="row">
+                    <div class="p-2">
+                      <p></p>
+                      <form class="container">
+                        <select
+                          class="dob-input"
+                          id="year"
+                          name="yyyy"
+                          onchange="change_year(this)"
+                        ></select>
+                        <select
+                          class="dob-input"
+                          id="month"
+                          name="mm"
+                          onchange="change_month(this)"
+                        ></select>
+                        <select class="dob-input" id="day" name="dd"></select>
+                        <br />
+                        <br />
+                      </form>
+                      <div class="user-detail">
+                        <p class="text-start text-capitalize fs-6">
+                          Enter Username
+                        </p>
+                        <div class="form-group">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="name"
+                            placeholder="Username"
+                            name="name"
+                          />
+                        </div>
+                        <br />
+                      </div>
+
+                      <div
+                        class="d-flex justify-content-center"
+                        style="position: relative; z-index: 2"
+                      >
+                        <button
+                          class="modal-cta next-modal"
+                          data-dismiss="modal"
+                          data-target="#sixth-modal"
+                        >
+                          Create Profile
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sixth Modal -->
+        <div
+          class="modal"
+          id="sixth-modal"
+          data-backdrop="static"
+          data-keyboard="false"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="padding-top: 150px">
+              <div class="modal-body">
+                <h4>Profile Photo</h4>
+                <br />
+                <!-- Image upload -->
+                <div
+                  class="circle position-relative display-2 d-flex align-items-center justify-content-center mb-3"
+                >
+                  <div class="profile-pic">
+                    <img
+                      alt="User Pic"
+                      src="https://d30y9cdsu7xlg0.cloudfront.net/png/138926-200.png"
+                      id="profile-image1"
+                      height="200"
+                    />
+                    <div style="color: #999"></div>
+                  </div>
+                </div>
+
+                <input type="file" id="customFile" name="file" hidden="" />
+                <label
+                  style="background-color: #db2127; color: #fff"
+                  class="btn btn-success-soft btn-block"
+                  for="customFile"
+                  >Upload</label
+                >
+                <button
+                  type="button"
+                  class="btn btn-secondary next-modal"
+                  data-dismiss="modal"
+                  data-target="#seventh-modal"
+                >
+                  Skip
+                </button>
               </div>
               <div
                 class="d-flex justify-content-center my-1"
+                style="
+                  margin-top: -70px;
+                  position: relative;
+                  z-index: 2;
+                  padding: 20px;
+                "
+              >
+                <button
+                  class="modal-cta next-modal"
+                  data-dismiss="modal"
+                  data-target="#seventh-modal"
+                >
+                  Submit
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- seventh modal -->
+
+        <div
+          class="modal fade"
+          id="seventh-modal"
+          data-backdrop="static"
+          data-keyboard="false"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content d-flex">
+              <div class="modal-body">
+                <h4>Congratulations!</h4>
+                <br />
+                <div class="card-content">
+                  <p class="text-center" style="font-size: 18px">
+                    Your profile has been created successfully. We have awarded
+                    you $250 bonus reward.
+                  </p>
+                  <div class="d-flex justify-content-center gap-2 form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      I have read and accepted
+                      <a href="../TermsAndConditions/termsAndConditions.html"
+                        >terms of use</a
+                      >
+                    </label>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <button
+                    class="modal-cta next-modal"
+                    data-dismiss="modal"
+                    data-target="#eigth-modal"
+                  >
+                    Complete
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- eigth Modal -->
+        <div
+          class="modal"
+          id="eigth-modal"
+          data-backdrop="static"
+          data-keyboard="false"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-body">
+                <h4>Payment Method</h4>
+                <hr />
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="bankcard"
+                    id="inlineRadio1"
+                    value="option1"
+                  />
+                  <label class="form-check-label" for="inlineRadio1"
+                    >Debit card</label
+                  >
+                </div>
+
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="bankcard"
+                    id="inlineRadio1"
+                    value="option1"
+                  />
+                  <label class="form-check-label" for="inlineRadio1"
+                    >Credit card</label
+                  >
+                </div>
+                <p>Payment amount:</p>
+                <h4>$10</h4>
+                <div class="row mt-4">
+                  <div class="col-md-12 form-group">
+                    <label for="card-name">Name on card</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="card-name"
+                      placeholder
+                    />
+                    <div class="invalid-feedback">Name on card is required</div>
+                  </div>
+
+                  <div class="col-md-12 form-group">
+                    <label for="card-no">Card Number</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="card-no"
+                      placeholder
+                    />
+                    <div class="invalid-feedback">
+                      Credit card number is required
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6 form-group">
+                    <label for="expiration">Expiration Date</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="card-name"
+                      placeholder
+                    />
+                    <div class="invalid-feedback">Expiration date required</div>
+                  </div>
+
+                  <div class="col-6 form-group">
+                    <label for="ccv-no">CVV</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="sec-no"
+                      placeholder
+                    />
+                    <div class="invalid-feedback">Security code required</div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="d-flex justify-content-center my-1 p-3"
                 style="margin-top: -70px; position: relative; z-index: 2"
               >
                 <button
                   class="modal-cta next-modal"
                   data-dismiss="modal"
-                  onclick="navigateCheckOut()"
+                  data-target="#ninth-modal"
                 >
-                  Complete
+                  <i class="fa fa-lock"></i>Pay $10.00
                 </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- eigth Modal -->
+        <div
+          class="modal"
+          id="ninth-modal"
+          data-backdrop="static"
+          data-keyboard="false"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="padding-top: 150px">
+              <div class="modal-body">
+                <br />
+                <div class="card-content">
+                  <p class="text-center" style="font-size: 18px">
+                    Your account has been created Successfully. We will be
+                    sending weekly updates.
+                  </p>
+                  <div class="d-flex justify-content-center">
+                    <button
+                      class="modal-cta next-modal"
+                      onclick="navigateProfile()"
+                    >
+                      Complete
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -575,69 +1378,90 @@
     <!-- Footer-->
     <footer class="bg-success py-5">
       <div class="container-fluid text-center">
+        <h2 class="h2 mb-5" style="color: #fff; font-weight: 700; font-size: 30px;">Welcome!<br/> To The Age Of Hunger Liberation</h2>
         <div class="row justify-content-center">
-          <div class="col-md-4">
-            <!-- <a href="/" class="d-flex justify-content-start" aria-label="Go home" title="Company">
+          <div class="col-md-0">
+           <!-- <a href="/" class="d-flex justify-content-start" aria-label="Go home" title="Company">
               <img src="../assets/images/Brandlogs Inc Logo NEW LOGO 14.08 1.png" style="width: 140px; height: 140px; margin-bottom: 40px;" alt="logo" class="img-fluid">
             </a>-->
             <div class="">
-              <div class="d-flex justify-content-start"></div>
               <div class="d-flex justify-content-start">
-                <div class="d-flex align-items-center"></div>
+
+              </div>
+              <div class="d-flex justify-content-start">
+                <div class="d-flex align-items-center">
+                  
+                </div>
               </div>
             </div>
           </div>
-          <div
-            class="col-md-8 d-flex justify-content-center footer-links-column"
-          >
-            <div class="footer-links">
-              <h2 class="h2 mb-5 footer-header">
-                Welcome!<br />
-                To The Age Of Hunger Liberation
-              </h2>
+          <div class="col-md-12 d-flex justify-content-center">
+            <div class="footer-links ">
+              
               <div>
-                <a href="#About" class="text-decoration-none">About Us</a>
+                <a
+                  href="../LandingPage/landingPage.html#About"
+                  class="text-decoration-none"
+                  >About Us</a
+                >
               </div>
               <div>
-                <a href="#Benefits" class="text-decoration-none">Benefits</a>
+                <a
+                  href="../LandingPage/landingPage.html#Benefits"
+                  class="text-decoration-none"
+                  >Benefits</a
+                >
               </div>
               <div>
-                <a href="#OurStories" class="text-decoration-none"
+                <a
+                  href="../LandingPage/landingPage.html#OurStories"
+                  class="text-decoration-none"
                   >Our Stories</a
                 >
               </div>
               <div>
-                <a href="#FAQs" class="text-decoration-none">FAQs</a>
+                <a
+                  href="../LandingPage/landingPage.html#FAQs"
+                  class="text-decoration-none"
+                  >FAQs</a
+                >
               </div>
               <div>
-                <a href="/" class="text-decoration-none text-white"
+                <a
+                  href="../PrivacyPolicy/privacyPolicy.html"
+                  class="text-decoration-none text-white"
                   >Privacy Policy</a
                 >
               </div>
               <div>
-                <a href="/" class="text-decoration-none text-white"
+                <a
+                  href="../TermsAndConditions/termsAndConditions.html"
+                  class="text-decoration-none text-white"
                   >Terms &amp; Conditions</a
                 >
               </div>
-              <br />
               <div>
                 <a
-                  href="../ContactForm/contact.html"
-                  class="text-decoration-none"
-                  style="color: white; font-weight: 600"
-                  >Contact Us</a
+                  href="./AdminOptions.html"
+                  class="text-decoration-none text-white"
+                  >Admin Login</a
                 >
               </div>
-              <p class="text-white pt-2">94306 Palo Alto, CA, United States</p>
-              <br />
-              <p style="margin-top: -30px; color: white">
-                © Copyright 2020 Brandlogs Inc. All rights reserved.
-              </p>
+              <br/>
+              <div>
+                <a href="../ContactForm/contact.html" class="text-decoration-none ">Contact Us</a>
+              </div>
+              <p class="text-end text-white pt-2">94306 Palo Alto, CA, United States</p>
+              <br/>
+              <p  style="margin-top: -30px; color: white;">© Copyright 2020 Brandlogs Inc. All rights reserved.</p>
+            </div>
             </div>
           </div>
         </div>
+        <div class="row">
+         
+        </div>
       </div>
-      <div class="row"></div>
     </footer>
     <!-- End Footer -->
     <!-- Scripts-->

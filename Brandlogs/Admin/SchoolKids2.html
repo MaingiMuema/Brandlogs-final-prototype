@@ -25,7 +25,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
     />
-
+    <link rel="stylesheet" href="../BrandlogsForms/login.css" />
     <!-- Add Chart.js library -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
@@ -107,94 +107,132 @@
         </nav>
       </div>
       <!-- Page Content Holder -->
-      <div id="content">
-        <div class="col-md-9 p-4 mt-0">
-          <h5 class="text-center mb-5"><b>Add School Kids</b></h5>
+      <div class="container-fluid p-3">
+        <h3 class="text-center my-4 text-capitalize">Add School kids</h3>
+        <div class="d-flex align-items-center justify-content-center">
+          <div class="form p-5 rounded">
+            <form action="submit" class="p-5 rounded">
+              <div class="text-center mb-4">
+                <p class="text-capitalize text-start">
+                  Enter school kid's profile photo
+                </p>
+                <!-- Image upload -->
+                <div
+                  class="circle position-relative display-2 d-flex align-items-center justify-content-center mb-3"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="40"
+                    height="40"
+                    fill="currentColor"
+                    class="bi bi-person-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                    />
+                  </svg>
+                </div>
 
-          <!-- Table -->
-          <table class="table table-responsive table-hover">
-            <thead>
-              <tr>
-                <th>Learning Stage</th>
-                <th colspan="3">Pupils</th>
-                <!-- <th></th>
-                    <th></th> -->
-              </tr>
-            </thead>
-            <tbody>
-              <!-- School Info Rows -->
-              <tr>
-                <td>Grade 1</td>
-                <td>75</td>
-                <td>
-                  <a href="./beneficiarydetails.html"
-                    ><button class="btn btn-secondary">View</button></a
-                  >
-                </td>
-                <td>
-                  <a href="./SchoolKids2.html"
-                    ><button class="btn btn-outline-success">Add</button></a
-                  >
-                </td>
-              </tr>
-              <tr>
-                <td>Grade 2</td>
-                <td>45</td>
-                <td>
-                  <a href="./beneficiarydetails.html"
-                    ><button class="btn btn-secondary">View</button></a
-                  >
-                </td>
-                <td>
-                  <a href="./SchoolKids2.html"
-                    ><button class="btn btn-outline-success">Add</button></a
-                  >
-                </td>
-              </tr>
-              <tr>
-                <td>Grade 3</td>
-                <td>98</td>
-                <td>
-                  <a href="./beneficiarydetails.html"
-                    ><button class="btn btn-secondary">View</button></a
-                  >
-                </td>
-                <td>
-                  <a href="./SchoolKids2.html"
-                    ><button class="btn btn-outline-success">Add</button></a
-                  >
-                </td>
-              </tr>
-              <tr>
-                <td>Grade 4</td>
-                <td>50</td>
-                <td>
-                  <a href="./beneficiarydetails.html"
-                    ><button class="btn btn-secondary">View</button></a
-                  >
-                </td>
-                <td>
-                  <a href="./SchoolKids2.html"
-                    ><button class="btn btn-outline-success">Add</button></a
-                  >
-                </td>
-              </tr>
-              <tr>
-                <td>Grade 5</td>
-                <td>65</td>
-                <td>
-                  <a href="./beneficiarydetails.html"
-                    ><button class="btn btn-secondary">View</button></a
-                  >
-                </td>
-                <td>
-                  <a href="./SchoolKids2.htm"
-                    ><button class="btn btn-outline-success">Add</button></a
-                  >
-                </td>
-              </tr>
-            </tbody>
-          </table>
+                <input type="file" id="customFile" name="file" hidden="" />
+                <label class="btn btn-success-soft btn-block" for="customFile"
+                  >Upload</label
+                >
+                <button type="button" class="btn btn-danger-soft">
+                  Delete
+                </button>
+              </div>
+
+              <div class="mb-3">
+                <label
+                  for="exampleInputText1"
+                  class="form-label text-capitalize"
+                  >Enter School Kid Name</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputText1"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label
+                  for="exampleInputDate1"
+                  class="form-label text-capitalize"
+                  >Enter DOB</label
+                >
+                <input
+                  type="date"
+                  id="dob"
+                  name="dob"
+                  class="form-control"
+                  id="exampleInputDate1"
+                />
+              </div>
+
+              <p class="text-capitalize">Enter school kid's gender</p>
+              <div class="form-check form-check-inline mb-3">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="schoolMeal-B"
+                  id="inlineRadio2"
+                  value="option2"
+                />
+                <label class="form-check-label" for="inlineRadio2">Male</label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="schoolMeal-B"
+                  id="inlineRadio2"
+                  value="option2"
+                />
+                <label class="form-check-label" for="inlineRadio2">
+                  Female</label
+                >
+              </div>
+
+              <div class="mb-3">
+                <label
+                  for="exampleInputText1"
+                  class="form-label text-capitalize"
+                  >Enter School Kid's Nemis Number (Optional)</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputText1"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label
+                  for="exampleInputText1"
+                  class="form-label text-capitalize"
+                  >Enter School Kid's Registration number</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputText1"
+                />
+              </div>
+            </form>
+            <a
+              href="../Admin/SchoolKidsPreview.html"
+              style="text-decoration: none"
+            >
+              <div
+                class="d-flex align-items-center justify-content-center mt-1"
+              >
+                <button type="submit" class="px-4 py-2 rounded">Submit</button>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </main>
@@ -261,13 +299,6 @@
                   href="../TermsAndConditions/termsAndConditions.html"
                   class="text-decoration-none text-white"
                   >Terms &amp; Conditions</a
-                >
-              </div>
-              <div>
-                <a
-                  href="./AdminOptions.html"
-                  class="text-decoration-none text-white"
-                  >Admin Login</a
                 >
               </div>
               <br />

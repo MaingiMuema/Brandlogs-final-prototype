@@ -25,6 +25,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
     />
+    <link rel="stylesheet" href="../Connects/card.css" />
     <!-- Add Chart.js library -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
@@ -55,7 +56,7 @@
     <main style="padding: 106px 0px">
       <div class="wrapper">
         <!-- Sidebar Holder -->
-        <nav id="sidebar" class="active">
+        <nav id="sidebar" class="active bg-white">
           <ul class="list-unstyled components">
             <li class="mobile-icon">
               <a href="./usermetrics.html" style="text-decoration: none">
@@ -84,11 +85,11 @@
                 <div class="d-flex">
                   <i
                     class="fas fa-list-alt"
-                    style="margin: 10px; color: #1c9346"
+                    style="margin: 10px; color: #f7a01c"
                   ></i>
                   <h4
                     class="mobile-hide-text text"
-                    style="margin: 10px; color: #1c9346"
+                    style="margin: 10px; color: #f7a01c"
                   >
                     Meal Program
                   </h4>
@@ -115,19 +116,33 @@
       </div>
       <!-- Page Content Holder -->
       <div id="content">
+        <div class=""></div>
         <div class="col-md-9 p-4 mt-0">
           <h5 class="text-center mb-5">
             <b>School Meal Voucher Program Beneficiaries</b>
           </h5>
 
           <!-- Table -->
+          <div class="w-100 d-flex justify-content-end">
+            <a
+              href="../Admin/SchoolOnboarding.html"
+              class="text-decoration-none"
+            >
+              <button
+                class="btn mb-3"
+                style="background-color: #db2127; color: #ffffff"
+              >
+                Add School
+              </button>
+            </a>
+          </div>
           <table class="table table-bordered">
             <thead>
               <tr>
                 <th>Logo</th>
                 <th>School Name</th>
                 <th>Total School Kids</th>
-                <th>Action</th>
+                <th>Action 1</th>
               </tr>
             </thead>
             <tbody>
@@ -137,17 +152,17 @@
                 data-target="#details1"
                 aria-expanded="false"
               >
-                <td>
+                <td class="flex align-items-center justify-content-center">
                   <img
-                    src="../Assets/images/school logo.png"
-                    width="50px"
-                    alt=""
+                    src="../Assets/images/logo1.png"
+                    alt="logo"
+                    style="width: 80px; border-radius: 50%"
                   />
                 </td>
-                <td>School 1</td>
+                <td>Kabarak Primary School</td>
                 <td>100</td>
                 <td>
-                  <button class="btn btn-outline-warning">View More</button>
+                  <button class="btn" style="color: #1c9346">View More</button>
                 </td>
               </tr>
               <tr
@@ -155,17 +170,17 @@
                 data-target="#details2"
                 aria-expanded="false"
               >
-                <td>
+                <td class="flex align-items-center justify-content-center">
                   <img
-                    src="../Assets/images/school logo.png"
-                    width="50px"
-                    alt=""
+                    src="../Assets/images/logo2.jpeg"
+                    alt="logo"
+                    style="width: 80px; border-radius: 50%"
                   />
                 </td>
-                <td>School 2</td>
+                <td>Bright Minds Academy</td>
                 <td>45</td>
                 <td>
-                  <button class="btn btn-outline-warning">View More</button>
+                  <button class="btn" style="color: #1c9346">View More</button>
                 </td>
               </tr>
               <tr
@@ -173,17 +188,17 @@
                 data-target="#details3"
                 aria-expanded="false"
               >
-                <td>
+                <td class="flex align-items-center justify-content-center">
                   <img
-                    src="../Assets/images/school logo.png"
-                    width="50px"
-                    alt=""
+                    src="../Assets/images/logo3.png"
+                    alt="logo"
+                    style="width: 80px; border-radius: 50%"
                   />
                 </td>
-                <td>School 3</td>
+                <td>Rafiki Junior School</td>
                 <td>75</td>
                 <td>
-                  <button class="btn btn-outline-warning">View More</button>
+                  <button class="btn" style="color: #1c9346">View More</button>
                 </td>
               </tr>
             </tbody>
@@ -309,27 +324,52 @@
                 To The Age Of Hunger Liberation
               </h2>
               <div>
-                <a href="#About" class="text-decoration-none">About Us</a>
+                <a
+                  href="../LandingPage/landingPage.html#About"
+                  class="text-decoration-none"
+                  >About Us</a
+                >
               </div>
               <div>
-                <a href="#Benefits" class="text-decoration-none">Benefits</a>
+                <a
+                  href="../LandingPage/landingPage.html#Benefits"
+                  class="text-decoration-none"
+                  >Benefits</a
+                >
               </div>
               <div>
-                <a href="#OurStories" class="text-decoration-none"
+                <a
+                  href="../LandingPage/landingPage.html#OurStories"
+                  class="text-decoration-none"
                   >Our Stories</a
                 >
               </div>
               <div>
-                <a href="#FAQs" class="text-decoration-none">FAQs</a>
+                <a
+                  href="../LandingPage/landingPage.html#FAQs"
+                  class="text-decoration-none"
+                  >FAQs</a
+                >
               </div>
               <div>
-                <a href="/" class="text-decoration-none text-white"
+                <a
+                  href="../PrivacyPolicy/privacyPolicy.html"
+                  class="text-decoration-none text-white"
                   >Privacy Policy</a
                 >
               </div>
               <div>
-                <a href="/" class="text-decoration-none text-white"
+                <a
+                  href="../TermsAndConditions/termsAndConditions.html"
+                  class="text-decoration-none text-white"
                   >Terms &amp; Conditions</a
+                >
+              </div>
+              <div>
+                <a
+                  href="./AdminOptions.html"
+                  class="text-decoration-none text-white"
+                  >Admin Login</a
                 >
               </div>
               <br />
