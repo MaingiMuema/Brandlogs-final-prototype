@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../Connects/card.css" />
+    <!-- Add Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+      tbody tr[data-toggle="collapse"][aria-expanded="true"] {
+        background-color: #f5f5f5; /* Change to your desired highlight color */
+      }
+    </style>
+    <title>Brandlogs</title>
+  </head>
+  <body>
+    <header style="position: fixed; width: 100%; z-index: 2">
+      <nav
+        class="navbar navbar-expand-lg navbar-light border-bottom-0 nav-bottom-line"
+      >
+        <div class="container-fluid d-flex">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="../Assets/images/Brandlogs Inc Logo NEW LOGO 14.08.2023 (1).svg"
+              style="width: 64px; height: 64px"
+              alt="Logo"
+          /></a>
+
+          <h3 class="text-center flex-grow-1"><b>Admin Dashboard</b></h3>
+        </div>
+      </nav>
+      <hr style="width: 100%; margin-top: -1px" />
+    </header>
+    <main style="padding: 106px 0px">
+      <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar" class="active bg-white">
+          <ul class="list-unstyled components">
+            <li class="mobile-icon">
+              <a href="./usermetrics.html" style="text-decoration: none">
+                <div
+                  class="d-flex"
+                  data-target="#Stammdaten"
+                  data-toggle="collapse"
+                  aria-expanded="false"
+                >
+                  <i class="fas fa-user" style="margin: 10px; color: #000"></i>
+                  <h4
+                    class="mobile-hide-text text"
+                    style="margin: 10px; color: #000"
+                  >
+                    User Metrics
+                  </h4>
+                </div>
+              </a>
+            </li>
+            <li class="mobile-icon">
+              <a
+                data-target="#Auf"
+                data-toggle="collapse"
+                aria-expanded="false"
+              >
+                <div class="d-flex">
+                  <i
+                    class="fas fa-list-alt"
+                    style="margin: 10px; color: #f7a01c"
+                  ></i>
+                  <h4
+                    class="mobile-hide-text text"
+                    style="margin: 10px; color: #f7a01c"
+                  >
+                    Meal Program
+                  </h4>
+                  <!-- List icon -->
+                </div>
+              </a>
+            </li>
+            <li class="mobile-icon">
+              <a href="../Admin/landingPage.html" style="text-decoration: none">
+                <div class="d-flex">
+                  <i class="fas fa-home" style="margin: 10px; color: #000"></i>
+                  <h4
+                    class="mobile-hide-text text"
+                    style="margin: 10px; color: black"
+                  >
+                    Landing Page
+                  </h4>
+                  <!-- Chart icon -->
+                </div>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Page Content Holder -->
+      <div id="content">
+        <div class=""></div>
+        <div class="col-md-9 p-4 mt-0">
+          <h5 class="text-center mb-5">
+            <b>School Meal Voucher Program Beneficiaries</b>
+          </h5>
+
+          <!-- Table -->
+          <div class="w-100 d-flex justify-content-end">
+            <a
+              href="../Admin/SchoolOnboarding.html"
+              class="text-decoration-none"
+            >
+              <button
+                class="btn mb-3"
+                style="background-color: #db2127; color: #ffffff"
+              >
+                Add School
+              </button>
+            </a>
+          </div>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Logo</th>
+                <th>School Name</th>
+                <th>Total School Kids</th>
+                <th>Action 1</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- School Info Rows -->
+              <tr
+                data-toggle="collapse"
+                data-target="#details1"
+                aria-expanded="false"
+              >
+                <td class="flex align-items-center justify-content-center">
+                  <img
+                    src="../Assets/images/logo1.png"
+                    alt="logo"
+                    style="width: 80px; border-radius: 50%"
+                  />
+                </td>
+                <td>Kabarak Primary School</td>
+                <td>100</td>
+                <td>
+                  <button class="btn" style="color: #1c9346">View More</button>
+                </td>
+              </tr>
+              <tr
+                data-toggle="collapse"
+                data-target="#details2"
+                aria-expanded="false"
+              >
+                <td class="flex align-items-center justify-content-center">
+                  <img
+                    src="../Assets/images/logo2.jpeg"
+                    alt="logo"
+                    style="width: 80px; border-radius: 50%"
+                  />
+                </td>
+                <td>Bright Minds Academy</td>
+                <td>45</td>
+                <td>
+                  <button class="btn" style="color: #1c9346">View More</button>
+                </td>
+              </tr>
+              <tr
+                data-toggle="collapse"
+                data-target="#details3"
+                aria-expanded="false"
+              >
+                <td class="flex align-items-center justify-content-center">
+                  <img
+                    src="../Assets/images/logo3.png"
+                    alt="logo"
+                    style="width: 80px; border-radius: 50%"
+                  />
+                </td>
+                <td>Rafiki Junior School</td>
+                <td>75</td>
+                <td>
+                  <button class="btn" style="color: #1c9346">View More</button>
+                </td>
+              </tr>
+            </tbody>
+            <!--  Table for Beneficiary Details -->
+            <table id="details1" class="collapse table">
+              <thead>
+                <th class="text-center" colspan="4">School Details</th>
+                <tr>
+                  <th>Name</th>
+                  <th>Grade</th>
+                  <th>Gender</th>
+                  <th>Birthday</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>John Doe</td>
+                  <td>Grade 5</td>
+                  <td>Male</td>
+                  <td>January 10, 2008</td>
+                </tr>
+                <tr>
+                  <td>Jane Doe</td>
+                  <td>Grade 4</td>
+                  <td>Female</td>
+                  <td>February 15, 2009</td>
+                </tr>
+                <tr>
+                  <td>John Doe</td>
+                  <td>Grade 1</td>
+                  <td>Male</td>
+                  <td>February 15, 2009</td>
+                </tr>
+              </tbody>
+            </table>
+            <table id="details2" class="collapse table">
+              <thead>
+                <th class="text-center" colspan="4">School Details</th>
+                <tr>
+                  <th>Name</th>
+                  <th>Grade</th>
+                  <th>Gender</th>
+                  <th>Birthday</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>John Doe</td>
+                  <td>Grade 5</td>
+                  <td>Male</td>
+                  <td>January 10, 2008</td>
+                </tr>
+                <tr>
+                  <td>Jane Doe</td>
+                  <td>Grade 4</td>
+                  <td>Female</td>
+                  <td>February 15, 2009</td>
+                </tr>
+                <tr>
+                  <td>John Doe</td>
+                  <td>Grade 1</td>
+                  <td>Male</td>
+                  <td>February 15, 2009</td>
+                </tr>
+              </tbody>
+            </table>
+            <table id="details3" class="collapse table">
+              <thead>
+                <th class="text-center" colspan="4">School Details</th>
+                <tr>
+                  <th>Name</th>
+                  <th>Grade</th>
+                  <th>Gender</th>
+                  <th>Birthday</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>John Doe</td>
+                  <td>Grade 5</td>
+                  <td>Male</td>
+                  <td>January 10, 2008</td>
+                </tr>
+                <tr>
+                  <td>Jane Doe</td>
+                  <td>Grade 4</td>
+                  <td>Female</td>
+                  <td>February 15, 2009</td>
+                </tr>
+                <tr>
+                  <td>John Doe</td>
+                  <td>Grade 1</td>
+                  <td>Male</td>
+                  <td>February 15, 2009</td>
+                </tr>
+              </tbody>
+            </table>
+          </table>
+        </div>
+      </div>
+    </main>
+    <!-- Footer-->
+    <footer class="bg-success py-5">
+      <div class="container-fluid text-center">
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <!-- <a href="/" class="d-flex justify-content-start" aria-label="Go home" title="Company">
+                        <img src="../assets/images/Brandlogs Inc Logo NEW LOGO 14.08 1.png" style="width: 140px; height: 140px; margin-bottom: 40px;" alt="logo" class="img-fluid">
+                      </a>-->
+            <div class="">
+              <div class="d-flex justify-content-start"></div>
+              <div class="d-flex justify-content-start">
+                <div class="d-flex align-items-center"></div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-8 d-flex justify-content-center footer-links-column"
+          >
+            <div class="footer-links">
+              <h2 class="h2 mb-5 footer-header">
+                Welcome!<br />
+                To The Age Of Hunger Liberation
+              </h2>
+              <div>
+                <a
+                  href="../LandingPage/landingPage.html#About"
+                  class="text-decoration-none"
+                  >About Us</a
+                >
+              </div>
+              <div>
+                <a
+                  href="../LandingPage/landingPage.html#Benefits"
+                  class="text-decoration-none"
+                  >Benefits</a
+                >
+              </div>
+              <div>
+                <a
+                  href="../LandingPage/landingPage.html#OurStories"
+                  class="text-decoration-none"
+                  >Our Stories</a
+                >
+              </div>
+              <div>
+                <a
+                  href="../LandingPage/landingPage.html#FAQs"
+                  class="text-decoration-none"
+                  >FAQs</a
+                >
+              </div>
+              <div>
+                <a
+                  href="../PrivacyPolicy/privacyPolicy.html"
+                  class="text-decoration-none text-white"
+                  >Privacy Policy</a
+                >
+              </div>
+              <div>
+                <a
+                  href="../TermsAndConditions/termsAndConditions.html"
+                  class="text-decoration-none text-white"
+                  >Terms &amp; Conditions</a
+                >
+              </div>
+              <div>
+                <a
+                  href="./AdminOptions.html"
+                  class="text-decoration-none text-white"
+                  >Admin Login</a
+                >
+              </div>
+              <br />
+              <div>
+                <a
+                  href="../ContactForm/contact.html"
+                  class="text-decoration-none"
+                  style="color: white; font-weight: 600"
+                  >Contact Us</a
+                >
+              </div>
+              <p class="text-white pt-2">94306 Palo Alto, CA, United States</p>
+              <br />
+              <p style="margin-top: -30px; color: white">
+                © Copyright 2020 Brandlogs Inc. All rights reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row"></div>
+    </footer>
+    <!-- End Footer -->
+    <!-- Scripts-->
+  </body>
+</html>

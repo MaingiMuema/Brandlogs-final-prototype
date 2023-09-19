@@ -1,0 +1,23 @@
+.btn {
+  outline: 1px solid #1c9346;
+  background-color: #ffffff;
+  color: #1c9346;
+}
+
+.btn:hover {
+  background-color: #1c9346;
+  color: #ffffff !important;
+}
+
+@media screen and (max-width: 360px) {
+  .btn {
+    padding: 0.3rem 1.2rem;
+  }
+
+  .img-card {
+    width: 100px;
+  }
+}
+
+@media only screen and(max-width: 280px) {
+}
